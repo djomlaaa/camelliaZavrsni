@@ -181,14 +181,32 @@ public class CamelliaAlgorithm {
 	};
 
 	private static final void roldq(int rot, int[] ki, int ioff, int[] ko, int ooff) {
+
 		ko[0 + ooff] = (ki[0 + ioff] << rot) | (ki[1 + ioff] >>> (32 - rot));
 		ko[1 + ooff] = (ki[1 + ioff] << rot) | (ki[2 + ioff] >>> (32 - rot));
 		ko[2 + ooff] = (ki[2 + ioff] << rot) | (ki[3 + ioff] >>> (32 - rot));
 		ko[3 + ooff] = (ki[3 + ioff] << rot) | (ki[0 + ioff] >>> (32 - rot));
+		if (ioff != ooff && currentArray != null) {
+			currentArray[currentKey][0] = ko[0 + ooff];
+			currentArray[currentKey][1] = ko[1 + ooff];
+			currentArray[currentKey][2] = ko[2 + ooff];
+			currentArray[currentKey][3] = ko[3 + ooff];
+		}
 		ki[0 + ioff] = ko[0 + ooff];
 		ki[1 + ioff] = ko[1 + ooff];
 		ki[2 + ioff] = ko[2 + ooff];
 		ki[3 + ioff] = ko[3 + ooff];
+
+		int offset = 0;
+		if (ioff != ooff) {
+		offset++;
+		}
+		if (currentArray != null) {
+			currentArray[currentKey + offset][0] = ko[0 + ioff];
+			currentArray[currentKey + offset][1] = ko[1 + ioff];
+			currentArray[currentKey + offset][2] = ko[2 + ioff];
+			currentArray[currentKey + offset][3] = ko[3 + ioff];
+		}
 	}
 
 	private static final void decroldq(int rot, int[] ki, int ioff, int[] ko, int ooff) {
@@ -207,10 +225,27 @@ public class CamelliaAlgorithm {
 		ko[1 + ooff] = (ki[2 + ioff] << (rot - 32)) | (ki[3 + ioff] >>> (64 - rot));
 		ko[2 + ooff] = (ki[3 + ioff] << (rot - 32)) | (ki[0 + ioff] >>> (64 - rot));
 		ko[3 + ooff] = (ki[0 + ioff] << (rot - 32)) | (ki[1 + ioff] >>> (64 - rot));
+		if (ioff != ooff && currentArray != null) {
+			currentArray[currentKey][0] = ko[0 + ooff];
+			currentArray[currentKey][1] = ko[1 + ooff];
+			currentArray[currentKey][2] = ko[2 + ooff];
+			currentArray[currentKey][3] = ko[3 + ooff];
+		}
 		ki[0 + ioff] = ko[0 + ooff];
 		ki[1 + ioff] = ko[1 + ooff];
 		ki[2 + ioff] = ko[2 + ooff];
 		ki[3 + ioff] = ko[3 + ooff];
+		int offset = 0;
+		if (ioff != ooff) {
+			offset++;
+		}
+		if (currentArray != null) {
+			currentArray[currentKey + offset][0] = ko[0 + ioff];
+			currentArray[currentKey + offset][1] = ko[1 + ioff];
+			currentArray[currentKey + offset][2] = ko[2 + ioff];
+			currentArray[currentKey + offset][3] = ko[3 + ioff];
+		}
+
 	}
 
 	private static final void decroldqo32(int rot, int[] ki, int ioff, int[] ko, int ooff) {
@@ -291,6 +326,9 @@ public class CamelliaAlgorithm {
 
 	public static byte[] initialKey;
 	public static int[][] xoringKeyA = new int[4][4];
+	public static int[][] rotatingKey = new int[18][8];
+	public static int currentKey;
+	public static int[][] currentArray;
 	//public static byte[]
 	private final void setkey(boolean forEncryption, byte[] key) {
 		initialKey = key;
@@ -380,30 +418,65 @@ public class CamelliaAlgorithm {
 				 * subkey[32]subkey[33] = k17;
 				 * subkey[34]subkey[35] = k18;
 				 * */
+
+				currentArray = rotatingKey;
 				kw[0] = k[0]; //kw1, kw2
 				kw[1] = k[1];
 				kw[2] = k[2];
 				kw[3] = k[3];
+				currentKey = 2;
 				roldq(15, k, 0, subkey, 4); //k3, k4
+
+				currentKey = 6;
 				roldq(30, k, 0, subkey, 12); // k7, k8
+
+
+currentKey = 9;
 				roldq(15, k, 0, t, 0);
 				subkey[18] = t[2]; //k10
 				subkey[19] = t[3];//
+
+				currentArray = null;
 				roldq(17, k, 0, kl, 4); //
+
+				currentArray = rotatingKey;
+				currentKey = 12;
 				roldq(17, k, 0, subkey, 24); // k13, k14
+				currentKey = 16;
 				roldq(17, k, 0, subkey, 32); // k17, k18
 				/* KA dependant keys */
+
 				subkey[0] = ka[0]; // k1
 				subkey[1] = ka[1]; //
 				subkey[2] = ka[2]; // k2
 				subkey[3] = ka[3]; //
+				rotatingKey[0][0] = ka[0];
+				rotatingKey[0][1] = ka[1];
+				rotatingKey[0][2] = ka[2];
+				rotatingKey[0][3] = ka[3];
+				rotatingKey[1][0] = ka[0];
+				rotatingKey[1][1] = ka[1];
+				rotatingKey[1][2] = ka[2];
+				rotatingKey[1][3] = ka[3];
+
+				currentKey = 4;
 				roldq(15, ka, 0, subkey, 8); // k5, k6
+
+				currentArray = null;
 				roldq(15, ka, 0, kl, 0); //kl1, kl2
+
+				currentArray = rotatingKey;
+				currentKey = 8;
 				roldq(15, ka, 0, t, 0); // k9
 				subkey[16] = t[0]; // 
 				subkey[17] = t[1]; //
+
+				currentKey = 10;
 				roldq(15, ka, 0, subkey, 20); // k11, k12
+				currentKey = 14;
 				roldqo32(34, ka, 0, subkey, 28); //k15, k16
+
+				currentArray = null;
 				roldq(17, ka, 0, kw, 4); //kw3, kw4
 
 			} else { // decryption

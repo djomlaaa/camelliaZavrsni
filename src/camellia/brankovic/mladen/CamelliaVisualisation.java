@@ -1,50 +1,72 @@
 package camellia.brankovic.mladen;
 
 import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CamelliaVisualisation {
+public class CamelliaVisualisation implements ByteArrayDisplay.MoseHoverOnByteListener {
 
     private JPanel MainPanel;
     private ByteArrayDisplay initialKey;
-    private JButton kaPreviousRound;
-    private JLabel kaRoundLabel;
-    private JButton kaNextRound;
+    private JButton previousRound;
+    private JLabel roundLabel;
+    private JButton nextRound;
+    private JTabbedPane tabbedPane;
+    private ByteArrayDisplay rotatingKey;
 
-    private int kaRoundIndex = 0;
+    private int currentOperation;
+private static final int OPERATION_COUNT = 2;
+    private int[] stepCount = new int[]{4,10};
+    private int[] roundIndex = new int[OPERATION_COUNT];
 
 
     public CamelliaVisualisation() {
         initialKey.SetByteArray(CamelliaAlgorithm.initialKey);
-
+rotatingKey.AddMoseHoverOnByteListener(this);
+initialKey.AddMoseHoverOnByteListener(this);
         //UpdateRound();
 
+        tabbedPane.addChangeListener(new ChangeListener() {
+            public void stateChanged(ChangeEvent e) {
+                currentOperation = tabbedPane.getSelectedIndex();
+                UpdateRound();
+            }
+        });
 
-
-        kaPreviousRound.addActionListener(new ActionListener() {
+        previousRound.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (kaRoundIndex > 0) {
-                    kaRoundIndex--;
+                if (roundIndex[currentOperation] > 0) {
+                    roundIndex[currentOperation]--;
                     UpdateRound();
                 }
             }
         });
-        kaNextRound.addActionListener(new ActionListener() {
+        nextRound.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (kaRoundIndex < 3) {
-                    kaRoundIndex++;
+                if (roundIndex[currentOperation] < stepCount[currentOperation]-1) {
+                    roundIndex[currentOperation]++;
                     UpdateRound();
                 }
             }
         });
+
     }
 
     private void UpdateRound() {
-        kaRoundLabel.setText(String.valueOf(kaRoundIndex+1));
-        initialKey.SetByteArray(IntArrayToByteArray(CamelliaAlgorithm.xoringKeyA[kaRoundIndex]));
+        roundLabel.setText("Runda: " + String.valueOf(roundIndex[currentOperation] +1));
+        switch (currentOperation) {
+            case 0:
+                initialKey.SetByteArray(IntArrayToByteArray(CamelliaAlgorithm.xoringKeyA[roundIndex[currentOperation]]));
+                break;
+            case 1:
+                rotatingKey.SetByteArray(IntArrayToByteArray(CamelliaAlgorithm.rotatingKey[roundIndex[currentOperation]]));
+                break;
+        }
     }
     private byte[] IntArrayToByteArray(int[] intArray) {
         byte[] byteArray = new byte[intArray.length];
@@ -69,5 +91,20 @@ public class CamelliaVisualisation {
         frame.pack();
         frame.setVisible(true);
 
+    }
+
+    @Override
+    public void HoverOn(int index, ByteArrayDisplay source) {
+if (source == initialKey) {
+    initialKey.SetByteBackgroundColor(index, Color.BLUE);
+}
+        if (source == rotatingKey) {
+            rotatingKey.SetByteBackgroundColor(index, Color.RED);
+        }
+    }
+
+    @Override
+    public void HoverOff(int index, ByteArrayDisplay source) {
+        source.SetByteBackgroundColor(index, null);
     }
 }
