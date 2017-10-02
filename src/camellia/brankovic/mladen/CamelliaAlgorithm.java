@@ -1,35 +1,5 @@
 package camellia.brankovic.mladen;
 
-/* Camellia.java	v 1.2.0
-Copyright (c) 2008
- NTT (Nippon Telegraph and Telephone Corporation) . All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions
-are met:
-1. Redistributions of source code must retain the above copyright
-   notice, this list of conditions and the following disclaimer as
-   the first lines of this file unmodified.
-2. Redistributions in binary form must reproduce the above copyright
-   notice, this list of conditions and the following disclaimer in the
-   documentation and/or other materials provided with the distribution.
-
-THIS SOFTWARE IS PROVIDED BY NTT ``AS IS'' AND ANY EXPRESS OR
-IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
-OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
-IN NO EVENT SHALL NTT BE LIABLE FOR ANY DIRECT, INDIRECT,
-INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
-NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
-THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*/
-
-/**
- * Camellia - based on RFC 3713.
- *
- */
 
 public class CamelliaAlgorithm {
 	private static final int BLOCK_SIZE = 16;
@@ -52,7 +22,7 @@ public class CamelliaAlgorithm {
 	 * S-box data
 	 *
 	 */
-	private static final int SBOX1_1110[] = { 0x70707000, 0x82828200, 0x2c2c2c00, 0xececec00, 0xb3b3b300, 0x27272700,
+	public static final int SBOX1_1110[] = { 0x70707000, 0x82828200, 0x2c2c2c00, 0xececec00, 0xb3b3b300, 0x27272700,
 			0xc0c0c000, 0xe5e5e500, 0xe4e4e400, 0x85858500, 0x57575700, 0x35353500, 0xeaeaea00, 0x0c0c0c00, 0xaeaeae00,
 			0x41414100, 0x23232300, 0xefefef00, 0x6b6b6b00, 0x93939300, 0x45454500, 0x19191900, 0xa5a5a500, 0x21212100,
 			0xededed00, 0x0e0e0e00, 0x4f4f4f00, 0x4e4e4e00, 0x1d1d1d00, 0x65656500, 0x92929200, 0xbdbdbd00, 0x86868600,
@@ -82,7 +52,37 @@ public class CamelliaAlgorithm {
 			0x40404000, 0x28282800, 0xd3d3d300, 0x7b7b7b00, 0xbbbbbb00, 0xc9c9c900, 0x43434300, 0xc1c1c100, 0x15151500,
 			0xe3e3e300, 0xadadad00, 0xf4f4f400, 0x77777700, 0xc7c7c700, 0x80808000, 0x9e9e9e00 };
 
-	private static final int SBOX4_4404[] = { 0x70700070, 0x2c2c002c, 0xb3b300b3, 0xc0c000c0, 0xe4e400e4, 0x57570057,
+	public static final byte[] SBOX1_1110_pravi = { (byte)0x70707000, (byte)0x82828200, (byte)0x2c2c2c00, (byte)0xececec00, (byte)0xb3b3b300, (byte)0x27272700,
+			(byte)0xc0c0c000, (byte)0xe5e5e500, (byte)0xe4e4e400, (byte)0x85858500, (byte)0x57575700, (byte)0x35353500, (byte)0xeaeaea00, (byte)0x0c0c0c00, (byte)0xaeaeae00,
+			(byte)0x41414100, (byte)0x23232300, (byte)0xefefef00, (byte)0x6b6b6b00, (byte)0x93939300, (byte)0x45454500, (byte)0x19191900, (byte)0xa5a5a500, (byte)0x21212100,
+			(byte)0xededed00, (byte)0x0e0e0e00, (byte)0x4f4f4f00, (byte)0x4e4e4e00, (byte)0x1d1d1d00, (byte)0x65656500, (byte)0x92929200, (byte)0xbdbdbd00, (byte)0x86868600,
+			(byte)0xb8b8b800, (byte)0xafafaf00, (byte)0x8f8f8f00, (byte)0x7c7c7c00, (byte)0xebebeb00, (byte)0x1f1f1f00, (byte)0xcecece00, (byte)0x3e3e3e00, (byte)0x30303000,
+			(byte)0xdcdcdc00, (byte)0x5f5f5f00, (byte)0x5e5e5e00, (byte)0xc5c5c500, (byte)0x0b0b0b00, (byte)0x1a1a1a00, (byte)0xa6a6a600, (byte)0xe1e1e100, (byte)0x39393900,
+			(byte)0xcacaca00, (byte)0xd5d5d500, (byte)0x47474700, (byte)0x5d5d5d00, (byte)0x3d3d3d00, (byte)0xd9d9d900, (byte)0x01010100, (byte)0x5a5a5a00, (byte)0xd6d6d600,
+			(byte)0x51515100, (byte)0x56565600, (byte)0x6c6c6c00, (byte)0x4d4d4d00, (byte)0x8b8b8b00, (byte)0x0d0d0d00, (byte)0x9a9a9a00, (byte)0x66666600, (byte)0xfbfbfb00,
+			(byte)0xcccccc00, (byte)0xb0b0b000, (byte)0x2d2d2d00, (byte)0x74747400, (byte)0x12121200, (byte)0x2b2b2b00, (byte)0x20202000, (byte)0xf0f0f000, (byte)0xb1b1b100,
+			(byte)0x84848400, (byte)0x99999900, (byte)0xdfdfdf00, (byte)0x4c4c4c00, (byte)0xcbcbcb00, (byte)0xc2c2c200, (byte)0x34343400, (byte)0x7e7e7e00, (byte)0x76767600,
+			(byte)0x05050500, (byte)0x6d6d6d00, (byte)0xb7b7b700, (byte)0xa9a9a900, (byte)0x31313100, (byte)0xd1d1d100, (byte)0x17171700, (byte)0x04040400, (byte)0xd7d7d700,
+			(byte)0x14141400, (byte)0x58585800, (byte)0x3a3a3a00, (byte)0x61616100, (byte)0xdedede00, (byte)0x1b1b1b00, (byte)0x11111100, (byte)0x1c1c1c00, (byte)0x32323200,
+			(byte)0x0f0f0f00, (byte)0x9c9c9c00, (byte)0x16161600, (byte)0x53535300, (byte)0x18181800, (byte)0xf2f2f200, (byte)0x22222200, (byte)0xfefefe00, (byte)0x44444400,
+			(byte)0xcfcfcf00, (byte)0xb2b2b200, (byte)0xc3c3c300, (byte)0xb5b5b500, (byte)0x7a7a7a00, (byte)0x91919100, (byte)0x24242400, (byte)0x08080800, (byte)0xe8e8e800,
+			(byte)0xa8a8a800, (byte)0x60606000, (byte)0xfcfcfc00, (byte)0x69696900, (byte)0x50505000, (byte)0xaaaaaa00, (byte)0xd0d0d000, (byte)0xa0a0a000, (byte)0x7d7d7d00,
+			(byte)0xa1a1a100, (byte)0x89898900, (byte)0x62626200, (byte)0x97979700, (byte)0x54545400, (byte)0x5b5b5b00, (byte)0x1e1e1e00, (byte)0x95959500, (byte)0xe0e0e000,
+			(byte)0xffffff00, (byte)0x64646400, (byte)0xd2d2d200, (byte)0x10101000, (byte)0xc4c4c400, (byte)0x00000000, (byte)0x48484800, (byte)0xa3a3a300, (byte)0xf7f7f700,
+			(byte)0x75757500, (byte)0xdbdbdb00, (byte)0x8a8a8a00, (byte)0x03030300, (byte)0xe6e6e600, (byte)0xdadada00, (byte)0x09090900, (byte)0x3f3f3f00, (byte)0xdddddd00,
+			(byte)0x94949400, (byte)0x87878700, (byte)0x5c5c5c00, (byte)0x83838300, (byte)0x02020200, (byte)0xcdcdcd00, (byte)0x4a4a4a00, (byte)0x90909000, (byte)0x33333300,
+			(byte)0x73737300, (byte)0x67676700, (byte)0xf6f6f600, (byte)0xf3f3f300, (byte)0x9d9d9d00, (byte)0x7f7f7f00, (byte)0xbfbfbf00, (byte)0xe2e2e200, (byte)0x52525200,
+			(byte)0x9b9b9b00, (byte)0xd8d8d800, (byte)0x26262600, (byte)0xc8c8c800, (byte)0x37373700, (byte)0xc6c6c600, (byte)0x3b3b3b00, (byte)0x81818100, (byte)0x96969600,
+			(byte)0x6f6f6f00, (byte)0x4b4b4b00, (byte)0x13131300, (byte)0xbebebe00, (byte)0x63636300, (byte)0x2e2e2e00, (byte)0xe9e9e900, (byte)0x79797900, (byte)0xa7a7a700,
+			(byte)0x8c8c8c00, (byte)0x9f9f9f00, (byte)0x6e6e6e00, (byte)0xbcbcbc00, (byte)0x8e8e8e00, (byte)0x29292900, (byte)0xf5f5f500, (byte)0xf9f9f900, (byte)0xb6b6b600,
+			(byte)0x2f2f2f00, (byte)0xfdfdfd00, (byte)0xb4b4b400, (byte)0x59595900, (byte)0x78787800, (byte)0x98989800, (byte)0x06060600, (byte)0x6a6a6a00, (byte)0xe7e7e700,
+			(byte)0x46464600, (byte)0x71717100, (byte)0xbababa00, (byte)0xd4d4d400, (byte)0x25252500, (byte)0xababab00, (byte)0x42424200, (byte)0x88888800, (byte)0xa2a2a200,
+			(byte)0x8d8d8d00, (byte)0xfafafa00, (byte)0x72727200, (byte)0x07070700, (byte)0xb9b9b900, (byte)0x55555500, (byte)0xf8f8f800, (byte)0xeeeeee00, (byte)0xacacac00,
+			(byte)0x0a0a0a00, (byte)0x36363600, (byte)0x49494900, (byte)0x2a2a2a00, (byte)0x68686800, (byte)0x3c3c3c00, (byte)0x38383800, (byte)0xf1f1f100, (byte)0xa4a4a400,
+			(byte)0x40404000, (byte)0x28282800, (byte)0xd3d3d300, (byte)0x7b7b7b00, (byte)0xbbbbbb00, (byte)0xc9c9c900, (byte)0x43434300, (byte)0xc1c1c100, (byte)0x15151500,
+			(byte)0xe3e3e300, (byte)0xadadad00, (byte)0xf4f4f400, (byte)0x77777700, (byte)0xc7c7c700, (byte)0x80808000, (byte)0x9e9e9e00 };
+
+	public static final int SBOX4_4404[] = { 0x70700070, 0x2c2c002c, 0xb3b300b3, 0xc0c000c0, 0xe4e400e4, 0x57570057,
 			0xeaea00ea, 0xaeae00ae, 0x23230023, 0x6b6b006b, 0x45450045, 0xa5a500a5, 0xeded00ed, 0x4f4f004f, 0x1d1d001d,
 			0x92920092, 0x86860086, 0xafaf00af, 0x7c7c007c, 0x1f1f001f, 0x3e3e003e, 0xdcdc00dc, 0x5e5e005e, 0x0b0b000b,
 			0xa6a600a6, 0x39390039, 0xd5d500d5, 0x5d5d005d, 0xd9d900d9, 0x5a5a005a, 0x51510051, 0x6c6c006c, 0x8b8b008b,
@@ -112,7 +112,7 @@ public class CamelliaAlgorithm {
 			0x07070007, 0x55550055, 0xeeee00ee, 0x0a0a000a, 0x49490049, 0x68680068, 0x38380038, 0xa4a400a4, 0x28280028,
 			0x7b7b007b, 0xc9c900c9, 0xc1c100c1, 0xe3e300e3, 0xf4f400f4, 0xc7c700c7, 0x9e9e009e };
 
-	private static final int SBOX2_0222[] = { 0x00e0e0e0, 0x00050505, 0x00585858, 0x00d9d9d9, 0x00676767, 0x004e4e4e,
+	public static final int SBOX2_0222[] = { 0x00e0e0e0, 0x00050505, 0x00585858, 0x00d9d9d9, 0x00676767, 0x004e4e4e,
 			0x00818181, 0x00cbcbcb, 0x00c9c9c9, 0x000b0b0b, 0x00aeaeae, 0x006a6a6a, 0x00d5d5d5, 0x00181818, 0x005d5d5d,
 			0x00828282, 0x00464646, 0x00dfdfdf, 0x00d6d6d6, 0x00272727, 0x008a8a8a, 0x00323232, 0x004b4b4b, 0x00424242,
 			0x00dbdbdb, 0x001c1c1c, 0x009e9e9e, 0x009c9c9c, 0x003a3a3a, 0x00cacaca, 0x00252525, 0x007b7b7b, 0x000d0d0d,
@@ -186,26 +186,32 @@ public class CamelliaAlgorithm {
 		ko[1 + ooff] = (ki[1 + ioff] << rot) | (ki[2 + ioff] >>> (32 - rot));
 		ko[2 + ooff] = (ki[2 + ioff] << rot) | (ki[3 + ioff] >>> (32 - rot));
 		ko[3 + ooff] = (ki[3 + ioff] << rot) | (ki[0 + ioff] >>> (32 - rot));
-		if (ioff != ooff && currentArray != null) {
-			currentArray[currentKey][0] = ko[0 + ooff];
-			currentArray[currentKey][1] = ko[1 + ooff];
-			currentArray[currentKey][2] = ko[2 + ooff];
-			currentArray[currentKey][3] = ko[3 + ooff];
+		if (ioff != ooff && currentOutputArray != null) {
+			currentOutputArray[currentOutputKey][0] = ko[0 + ooff];
+			currentOutputArray[currentOutputKey][1] = ko[1 + ooff];
+			currentOutputArray[currentOutputKey][2] = ko[2 + ooff];
+			currentOutputArray[currentOutputKey][3] = ko[3 + ooff];
 		}
 		ki[0 + ioff] = ko[0 + ooff];
 		ki[1 + ioff] = ko[1 + ooff];
 		ki[2 + ioff] = ko[2 + ooff];
 		ki[3 + ioff] = ko[3 + ooff];
+		if (ioff != ooff && currentInputArray != null) {
+			currentInputArray[currentInputKey][0] = ki[0 + ioff];
+			currentInputArray[currentInputKey][1] = ki[1 + ioff];
+			currentInputArray[currentInputKey][2] = ki[2 + ioff];
+			currentInputArray[currentInputKey][3] = ki[3 + ioff];
+		}
 
 		int offset = 0;
 		if (ioff != ooff) {
 		offset++;
 		}
-		if (currentArray != null) {
-			currentArray[currentKey + offset][0] = ko[0 + ioff];
-			currentArray[currentKey + offset][1] = ko[1 + ioff];
-			currentArray[currentKey + offset][2] = ko[2 + ioff];
-			currentArray[currentKey + offset][3] = ko[3 + ioff];
+		if (currentOutputArray != null) {
+			currentOutputArray[currentOutputKey + offset][0] = ko[0 + ioff];
+			currentOutputArray[currentOutputKey + offset][1] = ko[1 + ioff];
+			currentOutputArray[currentOutputKey + offset][2] = ko[2 + ioff];
+			currentOutputArray[currentOutputKey + offset][3] = ko[3 + ioff];
 		}
 	}
 
@@ -225,27 +231,32 @@ public class CamelliaAlgorithm {
 		ko[1 + ooff] = (ki[2 + ioff] << (rot - 32)) | (ki[3 + ioff] >>> (64 - rot));
 		ko[2 + ooff] = (ki[3 + ioff] << (rot - 32)) | (ki[0 + ioff] >>> (64 - rot));
 		ko[3 + ooff] = (ki[0 + ioff] << (rot - 32)) | (ki[1 + ioff] >>> (64 - rot));
-		if (ioff != ooff && currentArray != null) {
-			currentArray[currentKey][0] = ko[0 + ooff];
-			currentArray[currentKey][1] = ko[1 + ooff];
-			currentArray[currentKey][2] = ko[2 + ooff];
-			currentArray[currentKey][3] = ko[3 + ooff];
+		if (ioff != ooff && currentOutputArray != null) {
+			currentOutputArray[currentOutputKey][0] = ko[0 + ooff];
+			currentOutputArray[currentOutputKey][1] = ko[1 + ooff];
+			currentOutputArray[currentOutputKey][2] = ko[2 + ooff];
+			currentOutputArray[currentOutputKey][3] = ko[3 + ooff];
 		}
 		ki[0 + ioff] = ko[0 + ooff];
 		ki[1 + ioff] = ko[1 + ooff];
 		ki[2 + ioff] = ko[2 + ooff];
 		ki[3 + ioff] = ko[3 + ooff];
+		if (ioff != ooff && currentInputArray != null) {
+			currentInputArray[currentInputKey][0] = ki[0 + ioff];
+			currentInputArray[currentInputKey][1] = ki[1 + ioff];
+			currentInputArray[currentInputKey][2] = ki[2 + ioff];
+			currentInputArray[currentInputKey][3] = ki[3 + ioff];
+		}
 		int offset = 0;
 		if (ioff != ooff) {
 			offset++;
 		}
-		if (currentArray != null) {
-			currentArray[currentKey + offset][0] = ko[0 + ioff];
-			currentArray[currentKey + offset][1] = ko[1 + ioff];
-			currentArray[currentKey + offset][2] = ko[2 + ioff];
-			currentArray[currentKey + offset][3] = ko[3 + ioff];
+		if (currentOutputArray != null) {
+			currentOutputArray[currentOutputKey + offset][0] = ko[0 + ioff];
+			currentOutputArray[currentOutputKey + offset][1] = ko[1 + ioff];
+			currentOutputArray[currentOutputKey + offset][2] = ko[2 + ioff];
+			currentOutputArray[currentOutputKey + offset][3] = ko[3 + ioff];
 		}
-
 	}
 
 	private static final void decroldqo32(int rot, int[] ki, int ioff, int[] ko, int ooff) {
@@ -258,8 +269,16 @@ public class CamelliaAlgorithm {
 		ki[2 + ioff] = ko[0 + ooff];
 		ki[3 + ioff] = ko[1 + ooff];
 	}
+public static int[] Bytes128ToInt4(byte[]src) {
+		int[] val = new int[4];
+		val[0]=bytes2int(src,0);
+	val[1]=bytes2int(src,4);
+	val[2]=bytes2int(src,8);
+	val[3]=bytes2int(src,12);
+return val;
+}
 
-	private final int bytes2int(byte[] src, int offset) {
+	private static final int bytes2int(byte[] src, int offset) {
 		int word = 0;
 
 		for (int i = 0; i < 4; i++) {
@@ -268,7 +287,7 @@ public class CamelliaAlgorithm {
 		return word;
 	}
 
-	private final void int2bytes(int word, byte[] dst, int offset) {
+	private static final void int2bytes(int word, byte[] dst, int offset) {
 		for (int i = 0; i < 4; i++) {
 			dst[(3 - i) + offset] = (byte) word;
 			word >>>= 8;
@@ -324,14 +343,20 @@ public class CamelliaAlgorithm {
 	}
 
 
-	public static byte[] initialKey;
-	public static int[][] xoringKeyA = new int[4][4];
-	public static int[][] rotatingKey = new int[18][8];
-	public static int currentKey;
-	public static int[][] currentArray;
+	public static int[] initialKey;
+	public static int[][] formingKA = new int[4][4];
+	public static int[][] rotatingKA = new int[8][4];
+	public static int[][] rotatingKL = new int[8][4];
+	public static int[][] outputK = new int[18][4];
+	public static int[] outputKl = new int[4];
+	public static int[] outputKw = new int[4];
+	public static int currentOutputKey;
+	public static int currentInputKey;
+	public static int[][] currentOutputArray;
+	public static int[][] currentInputArray;
 	//public static byte[]
 	private final void setkey(boolean forEncryption, byte[] key) {
-		initialKey = key;
+		initialKey = Bytes128ToInt4(key);
 		int[] k = new int[8];
 		int[] ka = new int[4];
 		int[] kb = new int[4];
@@ -376,26 +401,27 @@ public class CamelliaAlgorithm {
 			ka[i] = k[i] ^ k[i + 4];
 		}
 		for (int u =0; u < 4;u++) {
-			xoringKeyA[0][u] = ka[u];
+			formingKA[0][u] = ka[u];
 		}
 		/* compute KA */
 		camelliaF2(ka, SIGMA, 0);
 		for (int u =0; u < 4;u++) {
-			xoringKeyA[1][u] = ka[u];
+			formingKA[1][u] = ka[u];
 		}
 		for (int i = 0; i < 4; i++) {
 			ka[i] ^= k[i];
 		}
 		for (int u =0; u < 4;u++) {
-			xoringKeyA[2][u] = ka[u];
+			formingKA[2][u] = ka[u];
 		}
 		camelliaF2(ka, SIGMA, 4);
 		for (int u =0; u < 4;u++) {
-			xoringKeyA[3][u] = ka[u];
+			formingKA[3][u] = ka[u];
 		}
 
 		if (_keyis128) {
 			if (forEncryption) {
+				currentInputArray = rotatingKL;
 				/* KL dependant keys */
 				
 				/*
@@ -419,65 +445,95 @@ public class CamelliaAlgorithm {
 				 * subkey[34]subkey[35] = k18;
 				 * */
 
-				currentArray = rotatingKey;
+				currentOutputArray = outputK;
+				currentInputKey = 0;
+				for (int i = 0; i<initialKey.length;i++){
+					rotatingKL[0][i] = initialKey[i];
+					rotatingKA[0][i] = formingKA[3][i];
+					rotatingKL[1][i] = initialKey[i];
+					rotatingKA[1][i] = formingKA[3][i];
+				}
+
 				kw[0] = k[0]; //kw1, kw2
 				kw[1] = k[1];
 				kw[2] = k[2];
 				kw[3] = k[3];
-				currentKey = 2;
+					outputKw[0] = kw [0];
+				outputKw[1] = kw [1];
+
+				currentOutputKey = 2;
+				currentInputKey = 2;
 				roldq(15, k, 0, subkey, 4); //k3, k4
 
-				currentKey = 6;
+				currentOutputKey = 6;
+				currentInputKey = 3;
 				roldq(30, k, 0, subkey, 12); // k7, k8
 
 
-currentKey = 9;
+currentOutputKey = 9;
+				currentInputKey = 4;
 				roldq(15, k, 0, t, 0);
 				subkey[18] = t[2]; //k10
 				subkey[19] = t[3];//
 
-				currentArray = null;
-				roldq(17, k, 0, kl, 4); //
+				currentOutputArray = null;
+				currentInputKey = 5;
+				roldq(17, k, 0, kl, 4); // kl3, kl4
+				outputKl[0] = kl [0];
+				outputKl[1] = kl [1];
 
-				currentArray = rotatingKey;
-				currentKey = 12;
+				currentOutputArray = outputK;
+				currentOutputKey = 12;
+				currentInputKey = 6;
 				roldq(17, k, 0, subkey, 24); // k13, k14
-				currentKey = 16;
+				currentOutputKey = 16;
+				currentInputKey = 7;
 				roldq(17, k, 0, subkey, 32); // k17, k18
 				/* KA dependant keys */
-
+				currentInputArray = rotatingKA;
+				currentInputKey = 1;
 				subkey[0] = ka[0]; // k1
 				subkey[1] = ka[1]; //
 				subkey[2] = ka[2]; // k2
 				subkey[3] = ka[3]; //
-				rotatingKey[0][0] = ka[0];
-				rotatingKey[0][1] = ka[1];
-				rotatingKey[0][2] = ka[2];
-				rotatingKey[0][3] = ka[3];
-				rotatingKey[1][0] = ka[0];
-				rotatingKey[1][1] = ka[1];
-				rotatingKey[1][2] = ka[2];
-				rotatingKey[1][3] = ka[3];
+				outputK[0][0] = ka[0];
+				outputK[0][1] = ka[1];
+				outputK[0][2] = ka[2];
+				outputK[0][3] = ka[3];
+				outputK[1][0] = ka[0];
+				outputK[1][1] = ka[1];
+				outputK[1][2] = ka[2];
+				outputK[1][3] = ka[3];
 
-				currentKey = 4;
+				currentOutputKey = 4;
+				currentInputKey = 2;
 				roldq(15, ka, 0, subkey, 8); // k5, k6
 
-				currentArray = null;
+				currentOutputArray = null;
+				currentInputKey = 3;
 				roldq(15, ka, 0, kl, 0); //kl1, kl2
+				outputKl[2] = kl [2];
+				outputKl[3] = kl [3];
 
-				currentArray = rotatingKey;
-				currentKey = 8;
+				currentOutputArray = outputK;
+				currentOutputKey = 8;
+				currentInputKey = 4;
 				roldq(15, ka, 0, t, 0); // k9
 				subkey[16] = t[0]; // 
 				subkey[17] = t[1]; //
 
-				currentKey = 10;
+				currentOutputKey = 10;
+				currentInputKey = 5;
 				roldq(15, ka, 0, subkey, 20); // k11, k12
-				currentKey = 14;
+				currentOutputKey = 14;
+				currentInputKey = 6;
 				roldqo32(34, ka, 0, subkey, 28); //k15, k16
 
-				currentArray = null;
+				currentOutputArray = null;
+				currentInputKey = 7;
 				roldq(17, ka, 0, kw, 4); //kw3, kw4
+				outputKw[2] = kw [2];
+				outputKw[3] = kw [3];
 
 			} else { // decryption
 				/* KL dependant keys */

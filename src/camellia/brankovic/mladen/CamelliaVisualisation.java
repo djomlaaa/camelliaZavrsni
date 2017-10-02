@@ -10,65 +10,82 @@ import java.awt.event.ActionListener;
 public class CamelliaVisualisation implements ByteArrayDisplay.MoseHoverOnByteListener {
 
     private JPanel MainPanel;
-    private ByteArrayDisplay initialKey;
+    private ByteArrayDisplay displayKL;
     private JButton previousRound;
     private JLabel roundLabel;
     private JButton nextRound;
     private JTabbedPane tabbedPane;
     private ByteArrayDisplay rotatingKey;
+    private ByteArrayDisplay displayKA;
+    private JButton showFFunction;
 
     private int currentOperation;
 private static final int OPERATION_COUNT = 2;
-    private int[] stepCount = new int[]{4,10};
+    private int[] stepCount = new int[]{5,26};
     private int[] roundIndex = new int[OPERATION_COUNT];
 
 
     public CamelliaVisualisation() {
-        initialKey.SetByteArray(CamelliaAlgorithm.initialKey);
 rotatingKey.AddMoseHoverOnByteListener(this);
-initialKey.AddMoseHoverOnByteListener(this);
-        //UpdateRound();
+displayKL.AddMoseHoverOnByteListener(this);
+        UpdateRound();
 
-        tabbedPane.addChangeListener(new ChangeListener() {
-            public void stateChanged(ChangeEvent e) {
-                currentOperation = tabbedPane.getSelectedIndex();
+        tabbedPane.addChangeListener(e -> {
+            currentOperation = tabbedPane.getSelectedIndex();
+            UpdateRound();
+        });
+
+        previousRound.addActionListener(e -> {
+            if (roundIndex[currentOperation] > 0) {
+                roundIndex[currentOperation]--;
+                UpdateRound();
+            }
+        });
+        nextRound.addActionListener(e -> {
+            if (roundIndex[currentOperation] < stepCount[currentOperation]-1) {
+                roundIndex[currentOperation]++;
                 UpdateRound();
             }
         });
 
-        previousRound.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (roundIndex[currentOperation] > 0) {
-                    roundIndex[currentOperation]--;
-                    UpdateRound();
-                }
-            }
-        });
-        nextRound.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (roundIndex[currentOperation] < stepCount[currentOperation]-1) {
-                    roundIndex[currentOperation]++;
-                    UpdateRound();
-                }
-            }
-        });
+        showFFunction.addActionListener(e -> {
+            JDialog jd = new FFunctionDialog(roundIndex[currentOperation]);
+            jd.setVisible(true);
 
+        });
     }
 
     private void UpdateRound() {
-        roundLabel.setText("Runda: " + String.valueOf(roundIndex[currentOperation] +1));
+        roundLabel.setText("Runda: " + String.valueOf(roundIndex[currentOperation]));
         switch (currentOperation) {
             case 0:
-                initialKey.SetByteArray(IntArrayToByteArray(CamelliaAlgorithm.xoringKeyA[roundIndex[currentOperation]]));
+                if (roundIndex[currentOperation] == 0) {
+                displayKL.SetByteArray(IntArrayToByteArray(CamelliaAlgorithm.initialKey));
+                displayKA.setVisible(false);
+                showFFunction.setVisible(false);
+                }
+                else if(roundIndex[currentOperation] == 1) {
+                    displayKL.SetByteArray(IntArrayToByteArray(CamelliaAlgorithm.initialKey));
+                    displayKA.setVisible(true);
+                    displayKA.SetByteArray(IntArrayToByteArray(CamelliaAlgorithm.formingKA[0]));
+                    showFFunction.setVisible(false);
+
+                }
+                else {
+                    displayKL.SetByteArray(IntArrayToByteArray(CamelliaAlgorithm.formingKA[roundIndex[currentOperation]-2]));
+                    displayKA.SetByteArray(IntArrayToByteArray(CamelliaAlgorithm.formingKA[roundIndex[currentOperation]-1]));
+                    displayKA.setVisible(true);
+
+                    showFFunction.setVisible(roundIndex[currentOperation] == 4 || roundIndex[currentOperation] == 2 );
+
+                }
                 break;
             case 1:
-                rotatingKey.SetByteArray(IntArrayToByteArray(CamelliaAlgorithm.rotatingKey[roundIndex[currentOperation]]));
+                rotatingKey.SetByteArray(IntArrayToByteArray(CamelliaAlgorithm.outputK[roundIndex[currentOperation]]));
                 break;
         }
     }
-    private byte[] IntArrayToByteArray(int[] intArray) {
+    public static byte[] IntArrayToByteArray(int[] intArray) {
         byte[] byteArray = new byte[intArray.length];
         for (int i = 0; i < intArray.length;i++) {
             byteArray[i] = (byte)intArray[i];
@@ -85,6 +102,7 @@ initialKey.AddMoseHoverOnByteListener(this);
 
         ca.init(true,key);
 
+
         JFrame frame = new JFrame("CamelliaVisualisation");
         frame.setContentPane(new CamelliaVisualisation().MainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -95,8 +113,8 @@ initialKey.AddMoseHoverOnByteListener(this);
 
     @Override
     public void HoverOn(int index, ByteArrayDisplay source) {
-if (source == initialKey) {
-    initialKey.SetByteBackgroundColor(index, Color.BLUE);
+if (source == displayKL) {
+    displayKL.SetByteBackgroundColor(index, Color.BLUE);
 }
         if (source == rotatingKey) {
             rotatingKey.SetByteBackgroundColor(index, Color.RED);

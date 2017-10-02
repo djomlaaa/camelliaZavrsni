@@ -10,6 +10,9 @@ import java.util.ArrayList;
 public class ByteArrayDisplay extends JPanel {
 
     private byte[] displayBytes;
+    private int[] displayInts;
+    private boolean[] displayBits;
+    private int displaySize;
     private Color defaultColor;
     private ArrayList<MoseHoverOnByteListener> listeners = new ArrayList<>();
 
@@ -23,20 +26,38 @@ public class ByteArrayDisplay extends JPanel {
 
     public void SetByteArray(byte[] displayBytes) {
 this.displayBytes = displayBytes;
+displayInts = null;
+displayBits = null;
+displaySize = displayBytes.length;
 ReCreateTextFields();
 UpdateTextFields();
     }
-
+    public void SetIntArray(int[] displayInts) {
+        displayBytes = null;
+        this.displayInts = displayInts;
+        displayBits = null;
+        displaySize = displayInts.length;
+        ReCreateTextFields();
+        UpdateTextFields();
+    }
+    public void SetBitArray(boolean[] displayBits) {
+        displayBytes = null;
+        displayInts = null;
+        this.displayBits = displayBits;
+        displaySize = displayBits.length;
+        ReCreateTextFields();
+        UpdateTextFields();
+    }
     private void ReCreateTextFields() {
 
-        GridLayout gridLayout = new GridLayout((int)Math.sqrt(displayBytes.length),(int)Math.sqrt(displayBytes.length));
+        GridLayout gridLayout = new GridLayout((int)Math.sqrt(displaySize),(int)Math.sqrt(displaySize));
 
         setLayout(gridLayout);
         removeAll();
         Dimension dimension = new Dimension();
         dimension.setSize(25,25);
-        TextFields = new TextField[displayBytes.length];
-        for (int i = 0; i < displayBytes.length; i++) {
+        TextFields = new TextField[displaySize];
+        for (int i = 0; i < displaySize; i++) {
 
             TextFields[i] = new TextField();
             TextFields[i].setEditable(false);
@@ -73,9 +94,22 @@ UpdateTextFields();
         }
     }
     private void UpdateTextFields() {
-        for (int i = 0; i < displayBytes.length; i++) {
-        TextFields[i].setText(String.format("%02X ", displayBytes[i]));
-    }
+        for (int i = 0; i < displaySize; i++) {
+            if (displayBytes != null) {
+                TextFields[i].setText(String.format("%02X ", displayBytes[i]));
+            }
+            else if (displayInts != null) {
+                TextFields[i].setText((((Integer)displayInts[i]).toString()));
+
+            }
+            else if (displayBits != null){
+                TextFields[i].setText(displayBits[i] ? "1" : "0");
+
+            }
+            else {
+                //WHAT DO YOU WANT FROM ME????
+            }
+            }
     }
 
     private TextField[] TextFields = new TextField[16];
