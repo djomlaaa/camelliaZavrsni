@@ -1,6 +1,7 @@
 package camellia.brankovic.mladen;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import javax.xml.soap.Text;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
@@ -21,7 +22,7 @@ public class ByteArrayDisplay extends JPanel {
     }
 
     public void SetByteBackgroundColor(int index, Color color) {
-        TextFields[index].setBackground(color == null ? defaultColor : color);
+        LabelFields[index].setBackground(color == null ? defaultColor : color);
     }
 
     public void SetByteArray(byte[] displayBytes) {
@@ -51,21 +52,28 @@ UpdateTextFields();
     private void ReCreateTextFields() {
 
         GridLayout gridLayout = new GridLayout((int)Math.sqrt(displaySize),(int)Math.sqrt(displaySize));
+        gridLayout.setHgap(3);
+        gridLayout.setVgap(3);
 
         setLayout(gridLayout);
         removeAll();
         Dimension dimension = new Dimension();
         dimension.setSize(25,25);
-        TextFields = new TextField[displaySize];
+        LabelFields = new JLabel[displaySize];
+        Border border = BorderFactory.createLineBorder(Color.black,2);
         for (int i = 0; i < displaySize; i++) {
 
-            TextFields[i] = new TextField();
-            TextFields[i].setEditable(false);
-            TextFields[i].setMinimumSize(dimension);
-            TextFields[i].setPreferredSize(dimension);
-            TextFields[i].setMaximumSize(dimension);
+            LabelFields[i] = new JLabel();
+            LabelFields[i].setMinimumSize(dimension);
+//            LabelFields[i].setPreferredSize(dimension);
+//            LabelFields[i].setMaximumSize(dimension);
+            LabelFields[i].setHorizontalAlignment(SwingConstants.CENTER);
+            LabelFields[i].setVerticalAlignment(SwingConstants.CENTER);
+            LabelFields[i].setBorder(border);
+            LabelFields[i].setOpaque(true);
+            LabelFields[i].setForeground(Color.black);
             int finalI = i;
-            TextFields[i].addMouseListener(new MouseAdapter() {
+            LabelFields[i].addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseEntered(MouseEvent e) {
                     super.mouseEntered(e);
@@ -77,9 +85,9 @@ UpdateTextFields();
                     RaiseMouseHoverEvent(finalI,false);
                 }
             });
-            add(TextFields[i]);
+            add(LabelFields[i]);
         }
-        defaultColor = TextFields[0].getBackground();
+        defaultColor = LabelFields[0].getBackground();
     }
 
     private void RaiseMouseHoverEvent(int index, boolean entered) {
@@ -96,14 +104,14 @@ UpdateTextFields();
     private void UpdateTextFields() {
         for (int i = 0; i < displaySize; i++) {
             if (displayBytes != null) {
-                TextFields[i].setText(String.format("%02X ", displayBytes[i]));
+                LabelFields[i].setText(String.format("%02X ", displayBytes[i]));
             }
             else if (displayInts != null) {
-                TextFields[i].setText((((Integer)displayInts[i]).toString()));
+                LabelFields[i].setText((((Integer)displayInts[i]).toString()));
 
             }
             else if (displayBits != null){
-                TextFields[i].setText(displayBits[i] ? "1" : "0");
+                LabelFields[i].setText(displayBits[i] ? "1" : "0");
 
             }
             else {
@@ -112,7 +120,7 @@ UpdateTextFields();
             }
     }
 
-    private TextField[] TextFields = new TextField[16];
+    private JLabel[] LabelFields = new JLabel[16];
     public ByteArrayDisplay() {
 
 

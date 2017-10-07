@@ -50,6 +50,9 @@ displayKL.AddMoseHoverOnByteListener(this);
 
         showFFunction.addActionListener(e -> {
             JDialog jd = new FFunctionDialog(roundIndex[currentOperation]);
+            jd.pack();
+            Dimension screenDimension = Toolkit.getDefaultToolkit().getScreenSize();
+            jd.setBounds(screenDimension.width / 2 - jd.getWidth()/2,screenDimension.height/2-jd.getHeight(),jd.getWidth(),jd.getHeight());
             jd.setVisible(true);
 
         });
@@ -93,7 +96,6 @@ displayKL.AddMoseHoverOnByteListener(this);
         return byteArray;
     }
 
-
     public static void main(String[] args) {
         byte[] plain = {(byte)0x01, (byte)0x23, (byte)0x45, (byte)0x67,(byte) 0x89, (byte)0xab, (byte)0xcd, (byte)0xef, (byte)0xfe,(byte) 0xdc, (byte) 0xba,(byte) 0x98,(byte) 0x76,(byte) 0x54,(byte) 0x32,(byte) 0x10};
         byte[] key = {(byte)0x01, (byte)0x23, (byte)0x45, (byte)0x67,(byte) 0x89, (byte)0xab, (byte)0xcd, (byte)0xef, (byte)0xfe,(byte) 0xdc, (byte) 0xba,(byte) 0x98,(byte) 0x76,(byte) 0x54,(byte) 0x32,(byte) 0x10};
@@ -105,8 +107,10 @@ displayKL.AddMoseHoverOnByteListener(this);
 
         JFrame frame = new JFrame("CamelliaVisualisation");
         frame.setContentPane(new CamelliaVisualisation().MainPanel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.pack();
+        Dimension screenDimension = Toolkit.getDefaultToolkit().getScreenSize();
+        frame.setBounds(screenDimension.width / 2 - frame.getWidth()/2,screenDimension.height/2-frame.getHeight(),frame.getWidth(),frame.getHeight());
         frame.setVisible(true);
 
     }

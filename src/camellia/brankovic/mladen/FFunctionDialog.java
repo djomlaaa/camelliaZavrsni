@@ -1,6 +1,7 @@
 package camellia.brankovic.mladen;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
 
 public class FFunctionDialog extends JDialog {
@@ -51,6 +52,9 @@ public class FFunctionDialog extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
         sBox1.addActionListener(e -> {
            JDialog jd = new byteArrayDialog(CamelliaAlgorithm.getSbox11110());
+           jd.pack();
+            Dimension screenDimension = Toolkit.getDefaultToolkit().getScreenSize();
+            jd.setBounds(screenDimension.width / 2 - jd.getWidth()/2,screenDimension.height/2-jd.getHeight(),jd.getWidth(),jd.getHeight());
         jd.setVisible(true);
         });
     }
