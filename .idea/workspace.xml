@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8847e51b-3b58-4f70-b517-0c08b6cf43d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/CamelliaVisualisation$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/CamelliaVisualisation$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/CamelliaVisualisation$3.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/ByteArrayDisplay$1.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/ByteArrayDisplay$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/ByteArrayDisplay.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/ByteArrayDisplay.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/CamelliaAlgorithm.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/CamelliaAlgorithm.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/CamelliaVisualisation.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/CamelliaVisualisation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog$1.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog$2.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog$3.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog$4.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/Main.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camellia/brankovic/mladen/ByteArrayDisplay.java" afterPath="$PROJECT_DIR$/src/camellia/brankovic/mladen/ByteArrayDisplay.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java" afterPath="$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.form" afterPath="$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java" afterPath="$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java" afterPath="$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,65 +29,65 @@
       <file leaf-file-name="ByteArrayDisplay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/ByteArrayDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="109" column="16" lean-forward="true" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
+            <state relative-caret-position="17">
+              <caret line="117" column="17" lean-forward="false" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CamelliaAlgorithm.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CamelliaAlgorithm.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="55" column="46" lean-forward="false" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="46" />
+            <state relative-caret-position="-584">
+              <caret line="416" column="47" lean-forward="true" selection-start-line="416" selection-start-column="47" selection-end-line="416" selection-end-column="47" />
               <folding>
-                <element signature="e#18254#18255#0" expanded="true" />
-                <element signature="e#18303#18304#0" expanded="true" />
-                <element signature="e#35080#35081#0" expanded="true" />
-                <element signature="e#35104#35105#0" expanded="true" />
-                <marker date="1506974889751" expanded="false" signature="18357:18362" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="18403:18406" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="33645:33650" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="33670:33673" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="33708:33713" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="33731:33734" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="33762:33767" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="33785:33788" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="34273:34278" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="34297:34300" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="34350:34355" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="34386:34389" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="34420:34425" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="34442:34445" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="34491:34496" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="34523:34526" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="34553:34558" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="34572:34575" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="34613:34618" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="34639:34642" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="34665:34670" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="34680:34683" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="34713:34718" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="34731:34734" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="34757:34762" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="34772:34775" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="34805:34810" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="34823:34826" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="34852:34857" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="34870:34873" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="34909:34914" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="34933:34936" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="34967:34972" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="34985:34988" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="35021:35026" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="35039:35042" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="35142:35147" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="35165:35168" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="35205:35210" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="35228:35231" ph=" }" />
-                <marker date="1506974889751" expanded="false" signature="35268:35273" ph=" { " />
-                <marker date="1506974889751" expanded="false" signature="35291:35294" ph=" }" />
+                <element signature="e#18252#18253#0" expanded="true" />
+                <element signature="e#18301#18302#0" expanded="true" />
+                <element signature="e#18356#18357#0" expanded="true" />
+                <element signature="e#18403#18404#0" expanded="true" />
+                <element signature="e#38935#38936#0" expanded="true" />
+                <element signature="e#38961#38962#0" expanded="true" />
+                <element signature="e#38998#38999#0" expanded="true" />
+                <element signature="e#39022#39023#0" expanded="true" />
+                <element signature="e#39052#39053#0" expanded="true" />
+                <element signature="e#39076#39077#0" expanded="true" />
+                <element signature="e#39563#39564#0" expanded="true" />
+                <element signature="e#39588#39589#0" expanded="true" />
+                <element signature="e#39640#39641#0" expanded="true" />
+                <element signature="e#39677#39678#0" expanded="true" />
+                <element signature="e#39710#39711#0" expanded="true" />
+                <element signature="e#39733#39734#0" expanded="true" />
+                <element signature="e#39781#39782#0" expanded="true" />
+                <element signature="e#39814#39815#0" expanded="true" />
+                <element signature="e#39843#39844#0" expanded="true" />
+                <element signature="e#39863#39864#0" expanded="true" />
+                <element signature="e#39903#39904#0" expanded="true" />
+                <element signature="e#39930#39931#0" expanded="true" />
+                <element signature="e#39955#39956#0" expanded="true" />
+                <element signature="e#39971#39972#0" expanded="true" />
+                <element signature="e#40003#40004#0" expanded="true" />
+                <element signature="e#40022#40023#0" expanded="true" />
+                <element signature="e#40047#40048#0" expanded="true" />
+                <element signature="e#40063#40064#0" expanded="true" />
+                <element signature="e#40095#40096#0" expanded="true" />
+                <element signature="e#40114#40115#0" expanded="true" />
+                <element signature="e#40142#40143#0" expanded="true" />
+                <element signature="e#40161#40162#0" expanded="true" />
+                <element signature="e#40199#40200#0" expanded="true" />
+                <element signature="e#40224#40225#0" expanded="true" />
+                <element signature="e#40257#40258#0" expanded="true" />
+                <element signature="e#40276#40277#0" expanded="true" />
+                <element signature="e#40311#40312#0" expanded="true" />
+                <element signature="e#40330#40331#0" expanded="true" />
+                <element signature="e#40369#40370#0" expanded="true" />
+                <element signature="e#40393#40394#0" expanded="true" />
+                <element signature="e#40432#40433#0" expanded="true" />
+                <element signature="e#40456#40457#0" expanded="true" />
+                <element signature="e#40495#40496#0" expanded="true" />
+                <element signature="e#40519#40520#0" expanded="true" />
+                <element signature="e#40558#40559#0" expanded="true" />
+                <element signature="e#40582#40583#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,15 +100,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="byteArrayDialog.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="byteArrayDialog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-              <folding>
-                <element signature="e#875#876#0" expanded="true" />
-                <element signature="e#913#914#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,8 +113,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="40">
+              <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -134,10 +130,12 @@
       <file leaf-file-name="CamelliaVisualisation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+            <state relative-caret-position="-184">
+              <caret line="76" column="22" lean-forward="true" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1507391678657" expanded="true" signature="1602:1695" ph="{...}" />
+                <marker date="1507391678657" expanded="true" signature="4727:4768" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -153,9 +151,11 @@
       <file leaf-file-name="FFunctionDialog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="52" column="32" lean-forward="true" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
-              <folding />
+            <state relative-caret-position="629">
+              <caret line="53" column="32" lean-forward="false" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+              <folding>
+                <marker date="1507391678666" expanded="true" signature="1990:2033" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -173,6 +173,8 @@
       <find>bytes2</find>
       <find>0x</find>
       <find>SetByteArray</find>
+      <find>initialKey</find>
+      <find>u ^= SBOX1_1110[(t1 &gt;&gt;&gt; 24) &amp; MASK8];</find>
     </findStrings>
     <replaceStrings>
       <replace>(byte)0x</replace>
@@ -193,10 +195,11 @@
         <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.form" />
         <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.form" />
         <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java" />
-        <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/ByteArrayDisplay.java" />
         <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.java" />
         <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.java" />
+        <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java" />
+        <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java" />
       </list>
     </option>
   </component>
@@ -221,7 +224,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,29 +248,15 @@
               <item name="camellia" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="mladen" type="462c0819:PsiDirectoryNode" />
-              <item name="byteArrayDialog" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="camellia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="camellia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mladen" type="462c0819:PsiDirectoryNode" />
               <item name="CamelliaVisualisation" type="e9f4de52:FormNode" />
-            </path>
-            <path>
-              <item name="camellia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="camellia" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mladen" type="462c0819:PsiDirectoryNode" />
-              <item name="FFunctionDialog" type="e9f4de52:FormNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,21 +429,21 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913387" sideWeight="0.5058565" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913387" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23645681" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -467,14 +456,362 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="15" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="85" column="9" lean-forward="false" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1507391678657" expanded="true" signature="1602:1695" ph="{...}" />
+            <marker date="1507391678657" expanded="true" signature="4727:4768" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="52" column="32" lean-forward="false" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding>
+            <marker date="1507391678666" expanded="true" signature="1990:2033" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5117">
+          <caret line="301" column="26" lean-forward="false" selection-start-line="301" selection-start-column="26" selection-end-line="301" selection-end-column="26" />
+          <folding>
+            <element signature="e#18252#18253#0" expanded="true" />
+            <element signature="e#18301#18302#0" expanded="true" />
+            <element signature="e#18356#18357#0" expanded="true" />
+            <element signature="e#18403#18404#0" expanded="true" />
+            <element signature="e#38935#38936#0" expanded="true" />
+            <element signature="e#38961#38962#0" expanded="true" />
+            <element signature="e#38998#38999#0" expanded="true" />
+            <element signature="e#39022#39023#0" expanded="true" />
+            <element signature="e#39052#39053#0" expanded="true" />
+            <element signature="e#39076#39077#0" expanded="true" />
+            <element signature="e#39563#39564#0" expanded="true" />
+            <element signature="e#39588#39589#0" expanded="true" />
+            <element signature="e#39640#39641#0" expanded="true" />
+            <element signature="e#39677#39678#0" expanded="true" />
+            <element signature="e#39710#39711#0" expanded="true" />
+            <element signature="e#39733#39734#0" expanded="true" />
+            <element signature="e#39781#39782#0" expanded="true" />
+            <element signature="e#39814#39815#0" expanded="true" />
+            <element signature="e#39843#39844#0" expanded="true" />
+            <element signature="e#39863#39864#0" expanded="true" />
+            <element signature="e#39903#39904#0" expanded="true" />
+            <element signature="e#39930#39931#0" expanded="true" />
+            <element signature="e#39955#39956#0" expanded="true" />
+            <element signature="e#39971#39972#0" expanded="true" />
+            <element signature="e#40003#40004#0" expanded="true" />
+            <element signature="e#40022#40023#0" expanded="true" />
+            <element signature="e#40047#40048#0" expanded="true" />
+            <element signature="e#40063#40064#0" expanded="true" />
+            <element signature="e#40095#40096#0" expanded="true" />
+            <element signature="e#40114#40115#0" expanded="true" />
+            <element signature="e#40142#40143#0" expanded="true" />
+            <element signature="e#40161#40162#0" expanded="true" />
+            <element signature="e#40199#40200#0" expanded="true" />
+            <element signature="e#40224#40225#0" expanded="true" />
+            <element signature="e#40257#40258#0" expanded="true" />
+            <element signature="e#40276#40277#0" expanded="true" />
+            <element signature="e#40311#40312#0" expanded="true" />
+            <element signature="e#40330#40331#0" expanded="true" />
+            <element signature="e#40369#40370#0" expanded="true" />
+            <element signature="e#40393#40394#0" expanded="true" />
+            <element signature="e#40432#40433#0" expanded="true" />
+            <element signature="e#40456#40457#0" expanded="true" />
+            <element signature="e#40495#40496#0" expanded="true" />
+            <element signature="e#40519#40520#0" expanded="true" />
+            <element signature="e#40558#40559#0" expanded="true" />
+            <element signature="e#40582#40583#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/ByteArrayDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="109" column="16" lean-forward="false" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="46" lean-forward="false" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="46" />
+          <folding>
+            <element signature="e#18252#18253#0" expanded="true" />
+            <element signature="e#18301#18302#0" expanded="true" />
+            <element signature="e#18356#18357#0" expanded="true" />
+            <element signature="e#18403#18404#0" expanded="true" />
+            <element signature="e#38935#38936#0" expanded="true" />
+            <element signature="e#38961#38962#0" expanded="true" />
+            <element signature="e#38998#38999#0" expanded="true" />
+            <element signature="e#39022#39023#0" expanded="true" />
+            <element signature="e#39052#39053#0" expanded="true" />
+            <element signature="e#39076#39077#0" expanded="true" />
+            <element signature="e#39563#39564#0" expanded="true" />
+            <element signature="e#39588#39589#0" expanded="true" />
+            <element signature="e#39640#39641#0" expanded="true" />
+            <element signature="e#39677#39678#0" expanded="true" />
+            <element signature="e#39710#39711#0" expanded="true" />
+            <element signature="e#39733#39734#0" expanded="true" />
+            <element signature="e#39781#39782#0" expanded="true" />
+            <element signature="e#39814#39815#0" expanded="true" />
+            <element signature="e#39843#39844#0" expanded="true" />
+            <element signature="e#39863#39864#0" expanded="true" />
+            <element signature="e#39903#39904#0" expanded="true" />
+            <element signature="e#39930#39931#0" expanded="true" />
+            <element signature="e#39955#39956#0" expanded="true" />
+            <element signature="e#39971#39972#0" expanded="true" />
+            <element signature="e#40003#40004#0" expanded="true" />
+            <element signature="e#40022#40023#0" expanded="true" />
+            <element signature="e#40047#40048#0" expanded="true" />
+            <element signature="e#40063#40064#0" expanded="true" />
+            <element signature="e#40095#40096#0" expanded="true" />
+            <element signature="e#40114#40115#0" expanded="true" />
+            <element signature="e#40142#40143#0" expanded="true" />
+            <element signature="e#40161#40162#0" expanded="true" />
+            <element signature="e#40199#40200#0" expanded="true" />
+            <element signature="e#40224#40225#0" expanded="true" />
+            <element signature="e#40257#40258#0" expanded="true" />
+            <element signature="e#40276#40277#0" expanded="true" />
+            <element signature="e#40311#40312#0" expanded="true" />
+            <element signature="e#40330#40331#0" expanded="true" />
+            <element signature="e#40369#40370#0" expanded="true" />
+            <element signature="e#40393#40394#0" expanded="true" />
+            <element signature="e#40432#40433#0" expanded="true" />
+            <element signature="e#40456#40457#0" expanded="true" />
+            <element signature="e#40495#40496#0" expanded="true" />
+            <element signature="e#40519#40520#0" expanded="true" />
+            <element signature="e#40558#40559#0" expanded="true" />
+            <element signature="e#40582#40583#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="85" column="9" lean-forward="false" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1507391678657" expanded="true" signature="1602:1695" ph="{...}" />
+            <marker date="1507391678657" expanded="true" signature="4727:4768" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="52" column="32" lean-forward="false" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding>
+            <marker date="1507391678666" expanded="true" signature="1990:2033" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/ByteArrayDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="109" column="16" lean-forward="false" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="46" lean-forward="false" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="46" />
+          <folding>
+            <element signature="e#18252#18253#0" expanded="true" />
+            <element signature="e#18301#18302#0" expanded="true" />
+            <element signature="e#18356#18357#0" expanded="true" />
+            <element signature="e#18403#18404#0" expanded="true" />
+            <element signature="e#38935#38936#0" expanded="true" />
+            <element signature="e#38961#38962#0" expanded="true" />
+            <element signature="e#38998#38999#0" expanded="true" />
+            <element signature="e#39022#39023#0" expanded="true" />
+            <element signature="e#39052#39053#0" expanded="true" />
+            <element signature="e#39076#39077#0" expanded="true" />
+            <element signature="e#39563#39564#0" expanded="true" />
+            <element signature="e#39588#39589#0" expanded="true" />
+            <element signature="e#39640#39641#0" expanded="true" />
+            <element signature="e#39677#39678#0" expanded="true" />
+            <element signature="e#39710#39711#0" expanded="true" />
+            <element signature="e#39733#39734#0" expanded="true" />
+            <element signature="e#39781#39782#0" expanded="true" />
+            <element signature="e#39814#39815#0" expanded="true" />
+            <element signature="e#39843#39844#0" expanded="true" />
+            <element signature="e#39863#39864#0" expanded="true" />
+            <element signature="e#39903#39904#0" expanded="true" />
+            <element signature="e#39930#39931#0" expanded="true" />
+            <element signature="e#39955#39956#0" expanded="true" />
+            <element signature="e#39971#39972#0" expanded="true" />
+            <element signature="e#40003#40004#0" expanded="true" />
+            <element signature="e#40022#40023#0" expanded="true" />
+            <element signature="e#40047#40048#0" expanded="true" />
+            <element signature="e#40063#40064#0" expanded="true" />
+            <element signature="e#40095#40096#0" expanded="true" />
+            <element signature="e#40114#40115#0" expanded="true" />
+            <element signature="e#40142#40143#0" expanded="true" />
+            <element signature="e#40161#40162#0" expanded="true" />
+            <element signature="e#40199#40200#0" expanded="true" />
+            <element signature="e#40224#40225#0" expanded="true" />
+            <element signature="e#40257#40258#0" expanded="true" />
+            <element signature="e#40276#40277#0" expanded="true" />
+            <element signature="e#40311#40312#0" expanded="true" />
+            <element signature="e#40330#40331#0" expanded="true" />
+            <element signature="e#40369#40370#0" expanded="true" />
+            <element signature="e#40393#40394#0" expanded="true" />
+            <element signature="e#40432#40433#0" expanded="true" />
+            <element signature="e#40456#40457#0" expanded="true" />
+            <element signature="e#40495#40496#0" expanded="true" />
+            <element signature="e#40519#40520#0" expanded="true" />
+            <element signature="e#40558#40559#0" expanded="true" />
+            <element signature="e#40582#40583#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1507391678657" expanded="true" signature="1602:1695" ph="{...}" />
+            <marker date="1507391678657" expanded="true" signature="4727:4768" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="52" column="32" lean-forward="true" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding>
+            <marker date="1507391678666" expanded="true" signature="1990:2033" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/ByteArrayDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1139">
@@ -502,6 +839,8 @@
           <caret line="63" column="35" lean-forward="true" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1507391678657" expanded="true" signature="1602:1695" ph="{...}" />
+            <marker date="1507391678657" expanded="true" signature="4727:4768" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -511,52 +850,52 @@
         <state relative-caret-position="5066">
           <caret line="298" column="31" lean-forward="false" selection-start-line="298" selection-start-column="31" selection-end-line="298" selection-end-column="31" />
           <folding>
-            <element signature="e#18254#18255#0" expanded="true" />
-            <element signature="e#18303#18304#0" expanded="true" />
-            <element signature="e#35080#35081#0" expanded="true" />
-            <element signature="e#35104#35105#0" expanded="true" />
-            <marker date="1506974889751" expanded="false" signature="18357:18362" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="18403:18406" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="33645:33650" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="33670:33673" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="33708:33713" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="33731:33734" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="33762:33767" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="33785:33788" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34273:34278" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34297:34300" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34350:34355" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34386:34389" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34420:34425" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34442:34445" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34491:34496" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34523:34526" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34553:34558" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34572:34575" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34613:34618" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34639:34642" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34665:34670" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34680:34683" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34713:34718" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34731:34734" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34757:34762" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34772:34775" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34805:34810" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34823:34826" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34852:34857" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34870:34873" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34909:34914" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34933:34936" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34967:34972" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34985:34988" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="35021:35026" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="35039:35042" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="35142:35147" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="35165:35168" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="35205:35210" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="35228:35231" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="35268:35273" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="35291:35294" ph=" }" />
+            <element signature="e#18252#18253#0" expanded="true" />
+            <element signature="e#18301#18302#0" expanded="true" />
+            <element signature="e#18356#18357#0" expanded="true" />
+            <element signature="e#18403#18404#0" expanded="true" />
+            <element signature="e#38935#38936#0" expanded="true" />
+            <element signature="e#38961#38962#0" expanded="true" />
+            <element signature="e#38998#38999#0" expanded="true" />
+            <element signature="e#39022#39023#0" expanded="true" />
+            <element signature="e#39052#39053#0" expanded="true" />
+            <element signature="e#39076#39077#0" expanded="true" />
+            <element signature="e#39563#39564#0" expanded="true" />
+            <element signature="e#39588#39589#0" expanded="true" />
+            <element signature="e#39640#39641#0" expanded="true" />
+            <element signature="e#39677#39678#0" expanded="true" />
+            <element signature="e#39710#39711#0" expanded="true" />
+            <element signature="e#39733#39734#0" expanded="true" />
+            <element signature="e#39781#39782#0" expanded="true" />
+            <element signature="e#39814#39815#0" expanded="true" />
+            <element signature="e#39843#39844#0" expanded="true" />
+            <element signature="e#39863#39864#0" expanded="true" />
+            <element signature="e#39903#39904#0" expanded="true" />
+            <element signature="e#39930#39931#0" expanded="true" />
+            <element signature="e#39955#39956#0" expanded="true" />
+            <element signature="e#39971#39972#0" expanded="true" />
+            <element signature="e#40003#40004#0" expanded="true" />
+            <element signature="e#40022#40023#0" expanded="true" />
+            <element signature="e#40047#40048#0" expanded="true" />
+            <element signature="e#40063#40064#0" expanded="true" />
+            <element signature="e#40095#40096#0" expanded="true" />
+            <element signature="e#40114#40115#0" expanded="true" />
+            <element signature="e#40142#40143#0" expanded="true" />
+            <element signature="e#40161#40162#0" expanded="true" />
+            <element signature="e#40199#40200#0" expanded="true" />
+            <element signature="e#40224#40225#0" expanded="true" />
+            <element signature="e#40257#40258#0" expanded="true" />
+            <element signature="e#40276#40277#0" expanded="true" />
+            <element signature="e#40311#40312#0" expanded="true" />
+            <element signature="e#40330#40331#0" expanded="true" />
+            <element signature="e#40369#40370#0" expanded="true" />
+            <element signature="e#40393#40394#0" expanded="true" />
+            <element signature="e#40432#40433#0" expanded="true" />
+            <element signature="e#40456#40457#0" expanded="true" />
+            <element signature="e#40495#40496#0" expanded="true" />
+            <element signature="e#40519#40520#0" expanded="true" />
+            <element signature="e#40558#40559#0" expanded="true" />
+            <element signature="e#40582#40583#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -594,52 +933,52 @@
         <state relative-caret-position="782">
           <caret line="46" column="29" lean-forward="true" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
           <folding>
-            <element signature="e#18254#18255#0" expanded="true" />
-            <element signature="e#18303#18304#0" expanded="true" />
-            <element signature="e#35080#35081#0" expanded="true" />
-            <element signature="e#35104#35105#0" expanded="true" />
-            <marker date="1506974889751" expanded="false" signature="18357:18362" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="18403:18406" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="33645:33650" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="33670:33673" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="33708:33713" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="33731:33734" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="33762:33767" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="33785:33788" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34273:34278" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34297:34300" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34350:34355" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34386:34389" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34420:34425" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34442:34445" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34491:34496" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34523:34526" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34553:34558" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34572:34575" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34613:34618" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34639:34642" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34665:34670" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34680:34683" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34713:34718" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34731:34734" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34757:34762" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34772:34775" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34805:34810" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34823:34826" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34852:34857" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34870:34873" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34909:34914" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34933:34936" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34967:34972" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34985:34988" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="35021:35026" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="35039:35042" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="35142:35147" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="35165:35168" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="35205:35210" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="35228:35231" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="35268:35273" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="35291:35294" ph=" }" />
+            <element signature="e#18252#18253#0" expanded="true" />
+            <element signature="e#18301#18302#0" expanded="true" />
+            <element signature="e#18356#18357#0" expanded="true" />
+            <element signature="e#18403#18404#0" expanded="true" />
+            <element signature="e#38935#38936#0" expanded="true" />
+            <element signature="e#38961#38962#0" expanded="true" />
+            <element signature="e#38998#38999#0" expanded="true" />
+            <element signature="e#39022#39023#0" expanded="true" />
+            <element signature="e#39052#39053#0" expanded="true" />
+            <element signature="e#39076#39077#0" expanded="true" />
+            <element signature="e#39563#39564#0" expanded="true" />
+            <element signature="e#39588#39589#0" expanded="true" />
+            <element signature="e#39640#39641#0" expanded="true" />
+            <element signature="e#39677#39678#0" expanded="true" />
+            <element signature="e#39710#39711#0" expanded="true" />
+            <element signature="e#39733#39734#0" expanded="true" />
+            <element signature="e#39781#39782#0" expanded="true" />
+            <element signature="e#39814#39815#0" expanded="true" />
+            <element signature="e#39843#39844#0" expanded="true" />
+            <element signature="e#39863#39864#0" expanded="true" />
+            <element signature="e#39903#39904#0" expanded="true" />
+            <element signature="e#39930#39931#0" expanded="true" />
+            <element signature="e#39955#39956#0" expanded="true" />
+            <element signature="e#39971#39972#0" expanded="true" />
+            <element signature="e#40003#40004#0" expanded="true" />
+            <element signature="e#40022#40023#0" expanded="true" />
+            <element signature="e#40047#40048#0" expanded="true" />
+            <element signature="e#40063#40064#0" expanded="true" />
+            <element signature="e#40095#40096#0" expanded="true" />
+            <element signature="e#40114#40115#0" expanded="true" />
+            <element signature="e#40142#40143#0" expanded="true" />
+            <element signature="e#40161#40162#0" expanded="true" />
+            <element signature="e#40199#40200#0" expanded="true" />
+            <element signature="e#40224#40225#0" expanded="true" />
+            <element signature="e#40257#40258#0" expanded="true" />
+            <element signature="e#40276#40277#0" expanded="true" />
+            <element signature="e#40311#40312#0" expanded="true" />
+            <element signature="e#40330#40331#0" expanded="true" />
+            <element signature="e#40369#40370#0" expanded="true" />
+            <element signature="e#40393#40394#0" expanded="true" />
+            <element signature="e#40432#40433#0" expanded="true" />
+            <element signature="e#40456#40457#0" expanded="true" />
+            <element signature="e#40495#40496#0" expanded="true" />
+            <element signature="e#40519#40520#0" expanded="true" />
+            <element signature="e#40558#40559#0" expanded="true" />
+            <element signature="e#40582#40583#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -657,52 +996,52 @@
         <state relative-caret-position="6035">
           <caret line="355" column="22" lean-forward="false" selection-start-line="355" selection-start-column="12" selection-end-line="355" selection-end-column="22" />
           <folding>
-            <element signature="e#18254#18255#0" expanded="true" />
-            <element signature="e#18303#18304#0" expanded="true" />
-            <element signature="e#35080#35081#0" expanded="true" />
-            <element signature="e#35104#35105#0" expanded="true" />
-            <marker date="1506974889751" expanded="false" signature="18357:18362" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="18403:18406" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="33645:33650" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="33670:33673" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="33708:33713" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="33731:33734" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="33762:33767" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="33785:33788" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34273:34278" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34297:34300" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34350:34355" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34386:34389" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34420:34425" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34442:34445" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34491:34496" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34523:34526" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34553:34558" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34572:34575" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34613:34618" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34639:34642" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34665:34670" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34680:34683" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34713:34718" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34731:34734" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34757:34762" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34772:34775" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34805:34810" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34823:34826" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34852:34857" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34870:34873" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34909:34914" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34933:34936" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34967:34972" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34985:34988" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="35021:35026" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="35039:35042" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="35142:35147" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="35165:35168" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="35205:35210" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="35228:35231" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="35268:35273" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="35291:35294" ph=" }" />
+            <element signature="e#18252#18253#0" expanded="true" />
+            <element signature="e#18301#18302#0" expanded="true" />
+            <element signature="e#18356#18357#0" expanded="true" />
+            <element signature="e#18403#18404#0" expanded="true" />
+            <element signature="e#38935#38936#0" expanded="true" />
+            <element signature="e#38961#38962#0" expanded="true" />
+            <element signature="e#38998#38999#0" expanded="true" />
+            <element signature="e#39022#39023#0" expanded="true" />
+            <element signature="e#39052#39053#0" expanded="true" />
+            <element signature="e#39076#39077#0" expanded="true" />
+            <element signature="e#39563#39564#0" expanded="true" />
+            <element signature="e#39588#39589#0" expanded="true" />
+            <element signature="e#39640#39641#0" expanded="true" />
+            <element signature="e#39677#39678#0" expanded="true" />
+            <element signature="e#39710#39711#0" expanded="true" />
+            <element signature="e#39733#39734#0" expanded="true" />
+            <element signature="e#39781#39782#0" expanded="true" />
+            <element signature="e#39814#39815#0" expanded="true" />
+            <element signature="e#39843#39844#0" expanded="true" />
+            <element signature="e#39863#39864#0" expanded="true" />
+            <element signature="e#39903#39904#0" expanded="true" />
+            <element signature="e#39930#39931#0" expanded="true" />
+            <element signature="e#39955#39956#0" expanded="true" />
+            <element signature="e#39971#39972#0" expanded="true" />
+            <element signature="e#40003#40004#0" expanded="true" />
+            <element signature="e#40022#40023#0" expanded="true" />
+            <element signature="e#40047#40048#0" expanded="true" />
+            <element signature="e#40063#40064#0" expanded="true" />
+            <element signature="e#40095#40096#0" expanded="true" />
+            <element signature="e#40114#40115#0" expanded="true" />
+            <element signature="e#40142#40143#0" expanded="true" />
+            <element signature="e#40161#40162#0" expanded="true" />
+            <element signature="e#40199#40200#0" expanded="true" />
+            <element signature="e#40224#40225#0" expanded="true" />
+            <element signature="e#40257#40258#0" expanded="true" />
+            <element signature="e#40276#40277#0" expanded="true" />
+            <element signature="e#40311#40312#0" expanded="true" />
+            <element signature="e#40330#40331#0" expanded="true" />
+            <element signature="e#40369#40370#0" expanded="true" />
+            <element signature="e#40393#40394#0" expanded="true" />
+            <element signature="e#40432#40433#0" expanded="true" />
+            <element signature="e#40456#40457#0" expanded="true" />
+            <element signature="e#40495#40496#0" expanded="true" />
+            <element signature="e#40519#40520#0" expanded="true" />
+            <element signature="e#40558#40559#0" expanded="true" />
+            <element signature="e#40582#40583#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -726,6 +1065,8 @@
           <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1507391678657" expanded="true" signature="1602:1695" ph="{...}" />
+            <marker date="1507391678657" expanded="true" signature="4727:4768" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -737,10 +1078,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="425">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -750,104 +1096,100 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java">
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+        <state relative-caret-position="629">
+          <caret line="53" column="32" lean-forward="false" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="55" column="46" lean-forward="false" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="46" />
-          <folding>
-            <element signature="e#18254#18255#0" expanded="true" />
-            <element signature="e#18303#18304#0" expanded="true" />
-            <element signature="e#35080#35081#0" expanded="true" />
-            <element signature="e#35104#35105#0" expanded="true" />
-            <marker date="1506974889751" expanded="false" signature="18357:18362" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="18403:18406" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="33645:33650" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="33670:33673" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="33708:33713" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="33731:33734" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="33762:33767" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="33785:33788" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34273:34278" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34297:34300" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34350:34355" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34386:34389" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34420:34425" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34442:34445" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34491:34496" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34523:34526" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34553:34558" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34572:34575" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34613:34618" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34639:34642" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34665:34670" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34680:34683" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34713:34718" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34731:34734" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34757:34762" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34772:34775" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34805:34810" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34823:34826" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34852:34857" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34870:34873" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34909:34914" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34933:34936" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="34967:34972" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="34985:34988" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="35021:35026" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="35039:35042" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="35142:35147" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="35165:35168" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="35205:35210" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="35228:35231" ph=" }" />
-            <marker date="1506974889751" expanded="false" signature="35268:35273" ph=" { " />
-            <marker date="1506974889751" expanded="false" signature="35291:35294" ph=" }" />
+            <marker date="1507391678666" expanded="true" signature="1990:2033" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/ByteArrayDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="109" column="16" lean-forward="true" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
+        <state relative-caret-position="17">
+          <caret line="117" column="17" lean-forward="false" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.java">
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="52" column="32" lean-forward="true" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+        <state relative-caret-position="40">
+          <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.java">
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        <state relative-caret-position="-184">
+          <caret line="76" column="22" lean-forward="true" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
           <folding>
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#913#914#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <marker date="1507391678657" expanded="true" signature="1602:1695" ph="{...}" />
+            <marker date="1507391678657" expanded="true" signature="4727:4768" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-584">
+          <caret line="416" column="47" lean-forward="true" selection-start-line="416" selection-start-column="47" selection-end-line="416" selection-end-column="47" />
+          <folding>
+            <element signature="e#18252#18253#0" expanded="true" />
+            <element signature="e#18301#18302#0" expanded="true" />
+            <element signature="e#18356#18357#0" expanded="true" />
+            <element signature="e#18403#18404#0" expanded="true" />
+            <element signature="e#38935#38936#0" expanded="true" />
+            <element signature="e#38961#38962#0" expanded="true" />
+            <element signature="e#38998#38999#0" expanded="true" />
+            <element signature="e#39022#39023#0" expanded="true" />
+            <element signature="e#39052#39053#0" expanded="true" />
+            <element signature="e#39076#39077#0" expanded="true" />
+            <element signature="e#39563#39564#0" expanded="true" />
+            <element signature="e#39588#39589#0" expanded="true" />
+            <element signature="e#39640#39641#0" expanded="true" />
+            <element signature="e#39677#39678#0" expanded="true" />
+            <element signature="e#39710#39711#0" expanded="true" />
+            <element signature="e#39733#39734#0" expanded="true" />
+            <element signature="e#39781#39782#0" expanded="true" />
+            <element signature="e#39814#39815#0" expanded="true" />
+            <element signature="e#39843#39844#0" expanded="true" />
+            <element signature="e#39863#39864#0" expanded="true" />
+            <element signature="e#39903#39904#0" expanded="true" />
+            <element signature="e#39930#39931#0" expanded="true" />
+            <element signature="e#39955#39956#0" expanded="true" />
+            <element signature="e#39971#39972#0" expanded="true" />
+            <element signature="e#40003#40004#0" expanded="true" />
+            <element signature="e#40022#40023#0" expanded="true" />
+            <element signature="e#40047#40048#0" expanded="true" />
+            <element signature="e#40063#40064#0" expanded="true" />
+            <element signature="e#40095#40096#0" expanded="true" />
+            <element signature="e#40114#40115#0" expanded="true" />
+            <element signature="e#40142#40143#0" expanded="true" />
+            <element signature="e#40161#40162#0" expanded="true" />
+            <element signature="e#40199#40200#0" expanded="true" />
+            <element signature="e#40224#40225#0" expanded="true" />
+            <element signature="e#40257#40258#0" expanded="true" />
+            <element signature="e#40276#40277#0" expanded="true" />
+            <element signature="e#40311#40312#0" expanded="true" />
+            <element signature="e#40330#40331#0" expanded="true" />
+            <element signature="e#40369#40370#0" expanded="true" />
+            <element signature="e#40393#40394#0" expanded="true" />
+            <element signature="e#40432#40433#0" expanded="true" />
+            <element signature="e#40456#40457#0" expanded="true" />
+            <element signature="e#40495#40496#0" expanded="true" />
+            <element signature="e#40519#40520#0" expanded="true" />
+            <element signature="e#40558#40559#0" expanded="true" />
+            <element signature="e#40582#40583#0" expanded="true" />
           </folding>
         </state>
       </provider>
