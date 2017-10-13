@@ -287,7 +287,7 @@ public class CamelliaAlgorithm {
 		return word;
 	}
 
-	private static final void int2bytes(int word, byte[] dst, int offset) {
+	public static final void int2bytes(int word, byte[] dst, int offset) {
 		for (int i = 0; i < 4; i++) {
 			dst[(3 - i) + offset] = (byte) word;
 			word >>>= 8;

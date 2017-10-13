@@ -158,11 +158,11 @@ UpdateTextFields();
             }
     }
 
-    private JLabel[] LabelFields = new JLabel[16];
+    private JLabel[] LabelFields = new JLabel[64];
     public ByteArrayDisplay() {
 
 
-        SetByteArray(new byte[16]);
+        SetBitArray(new boolean[64]);
     }
 
     public interface MoseHoverOnByteListener {
@@ -170,20 +170,28 @@ UpdateTextFields();
         void HoverOff(int index, ByteArrayDisplay source);
     }
 
-    public static boolean[] ToBits(byte[] bytes) {
+    public static boolean[] ByteArrayToBitArray(byte[] bytes) {
 
         boolean[] bools = new boolean[bytes.length *8];
         for (int i =0; i < bytes.length; i++) {
-            bools[i*4+0] = ((bytes[i] & 1) != 0);
-            bools[i*4+1] = ((bytes[i] & 2) != 0);
-            bools[i*4+2] = ((bytes[i] & 4) != 0);
-            bools[i*4+3] = ((bytes[i] & 8) != 0);
-            bools[i*4+4] = ((bytes[i] & 16) != 0);
-            bools[i*4+5] = ((bytes[i] & 32) != 0);
-            bools[i*4+6] = ((bytes[i] & 64) != 0);
-            bools[i*4+7] = ((bytes[i] & 128) != 0);
+            bools[i*8+0] = ((bytes[i] & 1) != 0);
+            bools[i*8+1] = ((bytes[i] & 2) != 0);
+            bools[i*8+2] = ((bytes[i] & 4) != 0);
+            bools[i*8+3] = ((bytes[i] & 8) != 0);
+            bools[i*8+4] = ((bytes[i] & 16) != 0);
+            bools[i*8+5] = ((bytes[i] & 32) != 0);
+            bools[i*8+6] = ((bytes[i] & 64) != 0);
+            bools[i*8+7] = ((bytes[i] & 128) != 0);
 
         }
         return bools;
+    }
+    public static byte[] ConcatenateByteArrays(byte[] a, byte[] b) {
+        int aLen = a.length;
+        int bLen = b.length;
+        byte[] c= new byte[aLen+bLen];
+        System.arraycopy(a, 0, c, 0, aLen);
+        System.arraycopy(b, 0, c, aLen, bLen);
+        return c;
     }
 }

@@ -1,11 +1,7 @@
 package camellia.brankovic.mladen;
 
 import javax.swing.*;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class CamelliaVisualisation implements ByteArrayDisplay.MoseHoverOnByteListener {
 
@@ -18,10 +14,14 @@ public class CamelliaVisualisation implements ByteArrayDisplay.MoseHoverOnByteLi
     private ByteArrayDisplay rotatingKey;
     private ByteArrayDisplay displayKA;
     private JButton showFFunction;
+    private JPanel flFunctionTab;
+    private JButton button1;
+    private ByteArrayDisplay displayT1T2Before;
+    private JLabel labelT1T2Before;
 
     private int currentOperation;
-private static final int OPERATION_COUNT = 2;
-    private int[] stepCount = new int[]{5,26};
+private static final int OPERATION_COUNT = 5;
+    private int[] stepCount = new int[]{5,26,18,18,0};
     private int[] roundIndex = new int[OPERATION_COUNT];
 
 
@@ -29,7 +29,6 @@ private static final int OPERATION_COUNT = 2;
 rotatingKey.AddMoseHoverOnByteListener(this);
 displayKL.AddMoseHoverOnByteListener(this);
         UpdateRound();
-
         tabbedPane.addChangeListener(e -> {
             currentOperation = tabbedPane.getSelectedIndex();
             UpdateRound();
@@ -59,24 +58,40 @@ displayKL.AddMoseHoverOnByteListener(this);
     }
 
     private void UpdateRound() {
+        if (currentOperation == 2) {
+            roundIndex[3] = roundIndex[2];
+        }
+        if (currentOperation == 3) {
+            roundIndex[2] = roundIndex[3];
+        }
+
+
+
+        tabbedPane.setEnabledAt(4,roundIndex[2] == 6 || roundIndex[2] == 12);
+
+            previousRound.setVisible(stepCount[currentOperation] > 0);
+            nextRound.setVisible(stepCount[currentOperation] > 0);
+            roundLabel.setVisible(stepCount[currentOperation] > 0);
+
+
         roundLabel.setText("Runda: " + String.valueOf(roundIndex[currentOperation]));
         switch (currentOperation) {
             case 0:
                 if (roundIndex[currentOperation] == 0) {
-                displayKL.SetBitArray(ByteArrayDisplay.ToBits(IntArrayToByteArray(CamelliaAlgorithm.initialKey)));
+                displayKL.SetBitArray(ByteArrayDisplay.ByteArrayToBitArray(IntArrayToByteArray(CamelliaAlgorithm.initialKey)));
                 displayKA.setVisible(false);
                 showFFunction.setVisible(false);
                 }
                 else if(roundIndex[currentOperation] == 1) {
-                    displayKL.SetBitArray(ByteArrayDisplay.ToBits(IntArrayToByteArray(CamelliaAlgorithm.initialKey)));
+                    displayKL.SetBitArray(ByteArrayDisplay.ByteArrayToBitArray(IntArrayToByteArray(CamelliaAlgorithm.initialKey)));
                     displayKA.setVisible(true);
-                    displayKA.SetBitArray(ByteArrayDisplay.ToBits(IntArrayToByteArray(CamelliaAlgorithm.formingKA[0])));
+                    displayKA.SetBitArray(ByteArrayDisplay.ByteArrayToBitArray(IntArrayToByteArray(CamelliaAlgorithm.formingKA[0])));
                     showFFunction.setVisible(false);
 
                 }
                 else {
-                    displayKL.SetBitArray(ByteArrayDisplay.ToBits(IntArrayToByteArray(CamelliaAlgorithm.formingKA[roundIndex[currentOperation]-2])));
-                    displayKA.SetBitArray(ByteArrayDisplay.ToBits(IntArrayToByteArray(CamelliaAlgorithm.formingKA[roundIndex[currentOperation]-1])));
+                    displayKL.SetBitArray(ByteArrayDisplay.ByteArrayToBitArray(IntArrayToByteArray(CamelliaAlgorithm.formingKA[roundIndex[currentOperation]-2])));
+                    displayKA.SetBitArray(ByteArrayDisplay.ByteArrayToBitArray(IntArrayToByteArray(CamelliaAlgorithm.formingKA[roundIndex[currentOperation]-1])));
                     displayKA.setVisible(true);
 
                     showFFunction.setVisible(roundIndex[currentOperation] == 4 || roundIndex[currentOperation] == 2 );
@@ -84,7 +99,15 @@ displayKL.AddMoseHoverOnByteListener(this);
                 }
                 break;
             case 1:
-                rotatingKey.SetBitArray(ByteArrayDisplay.ToBits(IntArrayToByteArray(CamelliaAlgorithm.outputK[roundIndex[currentOperation]])));
+                rotatingKey.SetBitArray(ByteArrayDisplay.ByteArrayToBitArray(IntArrayToByteArray(CamelliaAlgorithm.outputK[roundIndex[currentOperation]])));
+                break;
+            case 3:
+                byte[] T1StateBefore = new byte[4];
+                CamelliaAlgorithm.int2bytes(CamelliaAlgorithm.stateT1Before[roundIndex[currentOperation]],T1StateBefore,0);
+                byte[] T2StateBefore = new byte[4];
+                CamelliaAlgorithm.int2bytes(CamelliaAlgorithm.stateT2Before[roundIndex[currentOperation]],T2StateBefore,0);
+
+                displayT1T2Before.SetBitArray(ByteArrayDisplay.ByteArrayToBitArray(ByteArrayDisplay.ConcatenateByteArrays(T1StateBefore,T2StateBefore)));
                 break;
         }
     }
@@ -103,9 +126,11 @@ displayKL.AddMoseHoverOnByteListener(this);
         byte[] plain = {(byte)0x01, (byte)0x23, (byte)0x45, (byte)0x67,(byte) 0x89, (byte)0xab, (byte)0xcd, (byte)0xef, (byte)0xfe,(byte) 0xdc, (byte) 0xba,(byte) 0x98,(byte) 0x76,(byte) 0x54,(byte) 0x32,(byte) 0x10};
         byte[] key = {(byte)0x01, (byte)0x23, (byte)0x45, (byte)0x67,(byte) 0x89, (byte)0xab, (byte)0xcd, (byte)0xef, (byte)0xfe,(byte) 0xdc, (byte) 0xba,(byte) 0x98,(byte) 0x76,(byte) 0x54,(byte) 0x32,(byte) 0x10};
 
+        byte[] cipher = new byte[16];
         CamelliaAlgorithm ca = new CamelliaAlgorithm();
 
         ca.init(true,key);
+        ca.processBlock(plain, 0, cipher, 0);
 
 
         JFrame frame = new JFrame("CamelliaVisualisation");
@@ -113,7 +138,7 @@ displayKL.AddMoseHoverOnByteListener(this);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.pack();
         Dimension screenDimension = Toolkit.getDefaultToolkit().getScreenSize();
-        frame.setBounds(screenDimension.width / 2 - frame.getWidth()/2,screenDimension.height/2-frame.getHeight(),frame.getWidth(),frame.getHeight());
+        frame.setBounds(screenDimension.width / 2 - frame.getWidth()/2,screenDimension.height/2-(frame.getHeight()+50)/2,frame.getWidth()+100,frame.getHeight());
         frame.setVisible(true);
 
     }
