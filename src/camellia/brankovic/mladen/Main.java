@@ -27,7 +27,7 @@ public class Main {
 		System.out.println("");
 
 		CamelliaAlgorithm da = new CamelliaAlgorithm();
-		a.init(false,key);
+		a.init(true,key);
 		byte[] deciphered = new byte[16];
 		a.processBlock(cipher,0,deciphered,0);
 

@@ -11,8 +11,8 @@ public class CamelliaAlgorithm {
 	public int[] kw = new int[4 * 2]; // for whitening
 	public int[] kl = new int[6 * 2]; // for FL and FL^(-1)
 	public int[] state = new int[4]; // for encryption and decryption
-	
-	
+
+
 
 	private static final int SIGMA[] = { 0xa09e667f, 0x3bcc908b, 0xb67ae858, 0x4caa73b2, 0xc6ef372f, 0xe94f82be,
 			0x54ff53a5, 0xf1d36f1c, 0x10e527fa, 0xde682d1d, 0xb05688c2, 0xb3e6c1fd };
@@ -205,7 +205,7 @@ public class CamelliaAlgorithm {
 
 		int offset = 0;
 		if (ioff != ooff) {
-		offset++;
+			offset++;
 		}
 		if (currentOutputArray != null) {
 			currentOutputArray[currentOutputKey + offset][0] = ko[0 + ioff];
@@ -269,14 +269,14 @@ public class CamelliaAlgorithm {
 		ki[2 + ioff] = ko[0 + ooff];
 		ki[3 + ioff] = ko[1 + ooff];
 	}
-public static int[] Bytes128ToInt4(byte[]src) {
+	public static int[] Bytes128ToInt4(byte[]src) {
 		int[] val = new int[4];
 		val[0]=bytes2int(src,0);
-	val[1]=bytes2int(src,4);
-	val[2]=bytes2int(src,8);
-	val[3]=bytes2int(src,12);
-return val;
-}
+		val[1]=bytes2int(src,4);
+		val[2]=bytes2int(src,8);
+		val[3]=bytes2int(src,12);
+		return val;
+	}
 
 	private static final int bytes2int(byte[] src, int offset) {
 		int word = 0;
@@ -293,53 +293,142 @@ return val;
 			word >>>= 8;
 		}
 	}
-	
+
 
 	private final void camelliaF2(int[] state, int[] subkey, int keyoff) {
 		int t1, t2, u, v;
+/*pocetak neparnih rundi*/
 
+		for (int i = 0; i< state.length; i++){
+			stateBefore[currentInputState][i] = state[i];
+		}
+
+		stateT1Before[currentInputState] = 0;
 		t1 = state[0] ^ subkey[0 + keyoff];
+		stateT1After[currentInputState] = t1;
+
+		stateU1Before[currentInputState] = t1;
 		u = SBOX4_4404[t1 & MASK8];
+		stateU1After[currentInputState] = u;
+
+		stateU2Before[currentInputState] = u;
 		u ^= SBOX3_3033[(t1 >>> 8) & MASK8];
+		stateU2After[currentInputState] = u;
+
+		stateU3Before[currentInputState] = u;
 		u ^= SBOX2_0222[(t1 >>> 16) & MASK8];
+		stateU3After[currentInputState] = u;
+
+		stateU4Before[currentInputState] = u;
 		u ^= SBOX1_1110[(t1 >>> 24) & MASK8];
+		stateU4After[currentInputState] = u;
+
+		stateT2Before[currentInputState] = 0;
 		t2 = state[1] ^ subkey[1 + keyoff];
+		stateT2After[currentInputState] = t2;
+
+		stateV1Before[currentInputState] = t2;
 		v = SBOX1_1110[t2 & MASK8];
+		stateV1After[currentInputState] = v;
+
+		stateV2Before[currentInputState] = v;
 		v ^= SBOX4_4404[(t2 >>> 8) & MASK8];
+		stateV2After[currentInputState] = v;
+
+		stateV3Before[currentInputState] = v;
 		v ^= SBOX3_3033[(t2 >>> 16) & MASK8];
+		stateV3After[currentInputState] = v;
+
+		stateV4Before[currentInputState] = v;
 		v ^= SBOX2_0222[(t2 >>> 24) & MASK8];
+		stateV4After[currentInputState] = v;
 
 		state[2] ^= u ^ v;
 		state[3] ^= u ^ v ^ rightRotate(u, 8);
-		
-	
-		
 
+		for (int i = 0; i< state.length; i++){
+			stateAfter[currentInputState][i] = state[i];
+		}
+
+	/*kraj neparnih rundi i pocetak parnih rundi*/
+
+		for (int i = 0; i< state.length; i++){
+			stateBefore[currentInputState+1][i] = state[i];
+		}
+
+		stateT1Before[currentInputState+1] = 0;
 		t1 = state[2] ^ subkey[2 + keyoff];
+		stateT1After[currentInputState+1] = t1;
+
+		stateU1Before[currentInputState+1] = t1;
 		u = SBOX4_4404[t1 & MASK8];
+		stateU1After[currentInputState+1] = u;
+
+		stateU2Before[currentInputState+1] = u;
 		u ^= SBOX3_3033[(t1 >>> 8) & MASK8];
+		stateU2After[currentInputState+1] = u;
+
+		stateU3Before[currentInputState+1] = u;
 		u ^= SBOX2_0222[(t1 >>> 16) & MASK8];
+		stateU3After[currentInputState+1] = u;
+
+		stateU4Before[currentInputState+1] = u;
 		u ^= SBOX1_1110[(t1 >>> 24) & MASK8];
+		stateU4After[currentInputState+1] = u;
+
+		stateT2Before[currentInputState+1] = u;
 		t2 = state[3] ^ subkey[3 + keyoff];
+		stateT2After[currentInputState+1] = u;
+
+		stateV1Before[currentInputState+1] = t2;
 		v = SBOX1_1110[t2 & MASK8];
+		stateV1After[currentInputKey+1] = v;
+
+		stateV2Before[currentInputState+1] = v;
 		v ^= SBOX4_4404[(t2 >>> 8) & MASK8];
+		stateV2After[currentInputKey+1] = v;
+
+		stateV3Before[currentInputState+1] = v;
 		v ^= SBOX3_3033[(t2 >>> 16) & MASK8];
+		stateV3After[currentInputKey+1] = v;
+
+		stateV4Before[currentInputState+1] = v;
 		v ^= SBOX2_0222[(t2 >>> 24) & MASK8];
+		stateV4After[currentInputKey+1] = v;
 
 		state[0] ^= u ^ v;
 		state[1] ^= u ^ v ^ rightRotate(u, 8);
-		
-		
-		
+
+		for (int i = 0; i< state.length; i++){
+			stateAfter[currentInputState+1][i] = state[i];
+		}
+	/*kraj parnih rundi*/
+
+
 	}
 
 	private final void camelliaFLs(int[] s, int[] fkey, int keyoff) {
 
-		s[1] ^= leftRotate(s[0] & fkey[0 + keyoff], 1);
-		s[0] ^= fkey[1 + keyoff] | s[1];
+		for (int i = 0; i < s.length; i++){
+			stateLBefore[currentLState][i] = s[i];
+		}
+		stateL1Conjuction[currentLState] = s[0] & fkey[0 + keyoff];
+		stateL1Rotation[currentLState] = leftRotate(stateL1Conjuction[currentLState], 1);
+		s[1] ^= stateL1Rotation[currentLState];
 
-		s[2] ^= fkey[3 + keyoff] | s[3];
-		s[3] ^= leftRotate(fkey[2 + keyoff] & s[2], 1);
+		stateL2Disjunction[currentLState] = fkey[1 + keyoff] | s[1];
+		s[0] ^= stateL2Disjunction[currentLState];
+
+		stateL3Disjunction[currentLState] = fkey[3 + keyoff] | s[3];
+		s[2] ^= stateL3Disjunction[currentLState];
+
+		stateL4Conjuction[currentLState] = fkey[2 + keyoff] & s[2];
+		stateL4Rotation[currentLState] = leftRotate(stateL4Conjuction[currentLState], 1);
+		s[3] ^= stateL4Rotation[currentLState];
+
+		for (int i = 0; i < s.length; i++){
+			stateLAfter[currentLState][i] = s[i];
+		}
 	}
 
 
@@ -354,6 +443,47 @@ return val;
 	public static int currentInputKey;
 	public static int[][] currentOutputArray;
 	public static int[][] currentInputArray;
+
+	public static int[] initialState;
+	public static int currentOutputState;
+	public static int currentInputState;
+	public static int currentLState;
+
+
+	public static int[][] stateBefore = new int[18][4];
+	public static int[][] stateAfter = new int[18][4];
+
+	public static int[][] stateLBefore = new int[18][4];
+	public static int[][] stateLAfter = new int[18][4];
+
+	public static int[] prewhiteningState = new int[4];
+	public static int[] postwhiteningState = new int[4];
+	public static int[] stateT1Before = new int[18];
+	public static int[] stateT2Before = new int[18];
+	public static int[] stateT1After = new int[18];
+	public static int[] stateT2After = new int[18];
+	public static int[] stateU1Before = new int[18];
+	public static int[] stateU2Before = new int[18];
+	public static int[] stateU3Before = new int[18];
+	public static int[] stateU4Before = new int[18];
+	public static int[] stateV1Before = new int[18];
+	public static int[] stateV2Before = new int[18];
+	public static int[] stateV3Before = new int[18];
+	public static int[] stateV4Before = new int[18];
+	public static int[] stateU1After = new int[18];
+	public static int[] stateU2After = new int[18];
+	public static int[] stateU3After = new int[18];
+	public static int[] stateU4After = new int[18];
+	public static int[] stateV1After = new int[18];
+	public static int[] stateV2After = new int[18];
+	public static int[] stateV3After = new int[18];
+	public static int[] stateV4After = new int[18];
+	public static int[] stateL1Conjuction = new int[2];
+	public static int[] stateL2Disjunction = new int[2];
+	public static int[] stateL3Disjunction = new int [2];
+	public static int[] stateL4Conjuction = new int[2];
+	public static int[] stateL1Rotation = new int[2];
+	public static int[] stateL4Rotation = new int[2];
 	//public static byte[]
 	private final void setkey(boolean forEncryption, byte[] key) {
 		initialKey = Bytes128ToInt4(key);
@@ -363,38 +493,38 @@ return val;
 		int[] t = new int[4];
 
 		switch (key.length) {
-		case 16:
-			_keyis128 = true;
-			k[0] = bytes2int(key, 0);
-			k[1] = bytes2int(key, 4);
-			k[2] = bytes2int(key, 8);
-			k[3] = bytes2int(key, 12);
-			k[4] = k[5] = k[6] = k[7] = 0;
-			break;
-		case 24:
-			k[0] = bytes2int(key, 0);
-			k[1] = bytes2int(key, 4);
-			k[2] = bytes2int(key, 8);
-			k[3] = bytes2int(key, 12);
-			k[4] = bytes2int(key, 16);
-			k[5] = bytes2int(key, 20);
-			k[6] = ~k[4];
-			k[7] = ~k[5];
-			_keyis128 = false;
-			break;
-		case 32:
-			k[0] = bytes2int(key, 0);
-			k[1] = bytes2int(key, 4);
-			k[2] = bytes2int(key, 8);
-			k[3] = bytes2int(key, 12);
-			k[4] = bytes2int(key, 16);
-			k[5] = bytes2int(key, 20);
-			k[6] = bytes2int(key, 24);
-			k[7] = bytes2int(key, 28);
-			_keyis128 = false;
-			break;
-		default:
-			throw new IllegalArgumentException("key sizes are only 16/24/32 bytes.");
+			case 16:
+				_keyis128 = true;
+				k[0] = bytes2int(key, 0);
+				k[1] = bytes2int(key, 4);
+				k[2] = bytes2int(key, 8);
+				k[3] = bytes2int(key, 12);
+				k[4] = k[5] = k[6] = k[7] = 0;
+				break;
+			case 24:
+				k[0] = bytes2int(key, 0);
+				k[1] = bytes2int(key, 4);
+				k[2] = bytes2int(key, 8);
+				k[3] = bytes2int(key, 12);
+				k[4] = bytes2int(key, 16);
+				k[5] = bytes2int(key, 20);
+				k[6] = ~k[4];
+				k[7] = ~k[5];
+				_keyis128 = false;
+				break;
+			case 32:
+				k[0] = bytes2int(key, 0);
+				k[1] = bytes2int(key, 4);
+				k[2] = bytes2int(key, 8);
+				k[3] = bytes2int(key, 12);
+				k[4] = bytes2int(key, 16);
+				k[5] = bytes2int(key, 20);
+				k[6] = bytes2int(key, 24);
+				k[7] = bytes2int(key, 28);
+				_keyis128 = false;
+				break;
+			default:
+				throw new IllegalArgumentException("key sizes are only 16/24/32 bytes.");
 		}
 
 		for (int i = 0; i < 4; i++) {
@@ -423,7 +553,7 @@ return val;
 			if (forEncryption) {
 				currentInputArray = rotatingKL;
 				/* KL dependant keys */
-				
+
 				/*
 				 * subkey[0]subkey[1] = k1;
 				 * subkey[2]subkey[3] = k2;
@@ -458,7 +588,7 @@ return val;
 				kw[1] = k[1];
 				kw[2] = k[2];
 				kw[3] = k[3];
-					outputKw[0] = kw [0];
+				outputKw[0] = kw [0];
 				outputKw[1] = kw [1];
 
 				currentOutputKey = 2;
@@ -470,7 +600,7 @@ return val;
 				roldq(30, k, 0, subkey, 12); // k7, k8
 
 
-currentOutputKey = 9;
+				currentOutputKey = 9;
 				currentInputKey = 4;
 				roldq(15, k, 0, t, 0);
 				subkey[18] = t[2]; //k10
@@ -519,7 +649,7 @@ currentOutputKey = 9;
 				currentOutputKey = 8;
 				currentInputKey = 4;
 				roldq(15, ka, 0, t, 0); // k9
-				subkey[16] = t[0]; // 
+				subkey[16] = t[0]; //
 				subkey[17] = t[1]; //
 
 				currentOutputKey = 10;
@@ -642,29 +772,68 @@ currentOutputKey = 9;
 	}
 
 	private final int processBlock128(byte[] in, int inOff, byte[] out, int outOff) {
+		/*zapamtiti state*/
+		initialState = Bytes128ToInt4(in);
 		for (int i = 0; i < 4; i++) {
 			state[i] = bytes2int(in, inOff + (i * 4));
 			state[i] ^= kw[i];
 		}
-	
-			
+		for (int i = 0; i<state.length; i++){
+			prewhiteningState[i] = state[i];
+		}
+	/*zapamtiti state
+	* prikaz kad je nulta runda*/
+		currentInputState = 1;
+		currentOutputState = 1;
 		camelliaF2(state, subkey, 0);
+
+		currentInputState = 3;
+		currentOutputState = 3;
 		camelliaF2(state, subkey, 4);
+
+		currentInputState = 5;
+		currentOutputState = 5;
 		camelliaF2(state, subkey, 8);
+
+		currentLState = 1;
 		camelliaFLs(state, kl, 0);
+
+		currentInputState = 7;
+		currentOutputState = 7;
 		camelliaF2(state, subkey, 12);
+
+		currentInputState = 9;
+		currentOutputState = 9;
 		camelliaF2(state, subkey, 16);
+
+		currentInputState = 11;
+		currentOutputState = 11;
 		camelliaF2(state, subkey, 20);
+
+		currentLState = 2;
 		camelliaFLs(state, kl, 4);
+
+		currentInputState = 13;
+		currentOutputState = 13;
 		camelliaF2(state, subkey, 24);
+
+		currentInputState = 15;
+		currentOutputState = 15;
 		camelliaF2(state, subkey, 28);
+
+		currentInputState = 17;
+		currentOutputState = 17;
 		camelliaF2(state, subkey, 32);
 
 		state[2] ^= kw[4];
 		state[3] ^= kw[5];
 		state[0] ^= kw[6];
 		state[1] ^= kw[7];
-		
+
+		for (int i = 0; i<state.length; i++){
+			postwhiteningState[i] = state[i];
+		}
+
 
 		int2bytes(state[2], out, outOff);
 		int2bytes(state[3], out, outOff + 4);
@@ -808,6 +977,6 @@ currentOutputKey = 9;
 	public static int[] getSbox33033() {
 		return SBOX3_3033;
 	}
-	
+
 
 };

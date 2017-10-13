@@ -4,15 +4,17 @@
     <list default="true" id="8847e51b-3b58-4f70-b517-0c08b6cf43d1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/ByteArrayDisplay$1.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/ByteArrayDisplay$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/ByteArrayDisplay.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/ByteArrayDisplay.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/CamelliaAlgorithm.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/CamelliaAlgorithm.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/CamelliaVisualisation.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/CamelliaVisualisation.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog$1.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog$2.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog$3.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog$4.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/FFunctionDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/Main.class" afterPath="$PROJECT_DIR$/out/production/camellia/camellia/brankovic/mladen/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camellia/brankovic/mladen/ByteArrayDisplay.java" afterPath="$PROJECT_DIR$/src/camellia/brankovic/mladen/ByteArrayDisplay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java" afterPath="$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java" afterPath="$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java" afterPath="$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,30 +29,65 @@
       <file leaf-file-name="ByteArrayDisplay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/ByteArrayDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="72" column="28" lean-forward="true" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+            <state relative-caret-position="17">
+              <caret line="117" column="17" lean-forward="false" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SwingConstants.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/javax/swing/SwingConstants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="41" column="32" lean-forward="false" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CamelliaAlgorithm.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CamelliaAlgorithm.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="346" column="50" lean-forward="false" selection-start-line="346" selection-start-column="50" selection-end-line="346" selection-end-column="50" />
+            <state relative-caret-position="-584">
+              <caret line="416" column="47" lean-forward="true" selection-start-line="416" selection-start-column="47" selection-end-line="416" selection-end-column="47" />
               <folding>
-                <marker date="1507388077911" expanded="true" signature="29162:31862" ph="{...}" />
+                <element signature="e#18252#18253#0" expanded="true" />
+                <element signature="e#18301#18302#0" expanded="true" />
+                <element signature="e#18356#18357#0" expanded="true" />
+                <element signature="e#18403#18404#0" expanded="true" />
+                <element signature="e#38935#38936#0" expanded="true" />
+                <element signature="e#38961#38962#0" expanded="true" />
+                <element signature="e#38998#38999#0" expanded="true" />
+                <element signature="e#39022#39023#0" expanded="true" />
+                <element signature="e#39052#39053#0" expanded="true" />
+                <element signature="e#39076#39077#0" expanded="true" />
+                <element signature="e#39563#39564#0" expanded="true" />
+                <element signature="e#39588#39589#0" expanded="true" />
+                <element signature="e#39640#39641#0" expanded="true" />
+                <element signature="e#39677#39678#0" expanded="true" />
+                <element signature="e#39710#39711#0" expanded="true" />
+                <element signature="e#39733#39734#0" expanded="true" />
+                <element signature="e#39781#39782#0" expanded="true" />
+                <element signature="e#39814#39815#0" expanded="true" />
+                <element signature="e#39843#39844#0" expanded="true" />
+                <element signature="e#39863#39864#0" expanded="true" />
+                <element signature="e#39903#39904#0" expanded="true" />
+                <element signature="e#39930#39931#0" expanded="true" />
+                <element signature="e#39955#39956#0" expanded="true" />
+                <element signature="e#39971#39972#0" expanded="true" />
+                <element signature="e#40003#40004#0" expanded="true" />
+                <element signature="e#40022#40023#0" expanded="true" />
+                <element signature="e#40047#40048#0" expanded="true" />
+                <element signature="e#40063#40064#0" expanded="true" />
+                <element signature="e#40095#40096#0" expanded="true" />
+                <element signature="e#40114#40115#0" expanded="true" />
+                <element signature="e#40142#40143#0" expanded="true" />
+                <element signature="e#40161#40162#0" expanded="true" />
+                <element signature="e#40199#40200#0" expanded="true" />
+                <element signature="e#40224#40225#0" expanded="true" />
+                <element signature="e#40257#40258#0" expanded="true" />
+                <element signature="e#40276#40277#0" expanded="true" />
+                <element signature="e#40311#40312#0" expanded="true" />
+                <element signature="e#40330#40331#0" expanded="true" />
+                <element signature="e#40369#40370#0" expanded="true" />
+                <element signature="e#40393#40394#0" expanded="true" />
+                <element signature="e#40432#40433#0" expanded="true" />
+                <element signature="e#40456#40457#0" expanded="true" />
+                <element signature="e#40495#40496#0" expanded="true" />
+                <element signature="e#40519#40520#0" expanded="true" />
+                <element signature="e#40558#40559#0" expanded="true" />
+                <element signature="e#40582#40583#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,8 +103,18 @@
       <file leaf-file-name="byteArrayDialog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="425">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -80,22 +127,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CamelliaVisualisation.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CamelliaVisualisation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="65" column="62" lean-forward="false" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
-              <folding />
+            <state relative-caret-position="-184">
+              <caret line="76" column="22" lean-forward="true" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1507391678657" expanded="true" signature="1602:1695" ph="{...}" />
+                <marker date="1507391678657" expanded="true" signature="4727:4768" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,9 +151,11 @@
       <file leaf-file-name="FFunctionDialog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="56" column="108" lean-forward="false" selection-start-line="56" selection-start-column="108" selection-end-line="56" selection-end-column="108" />
-              <folding />
+            <state relative-caret-position="629">
+              <caret line="53" column="32" lean-forward="false" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
+              <folding>
+                <marker date="1507391678666" expanded="true" signature="1990:2033" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,8 +173,8 @@
       <find>bytes2</find>
       <find>0x</find>
       <find>SetByteArray</find>
-      <find>edita</find>
-      <find>setText</find>
+      <find>initialKey</find>
+      <find>u ^= SBOX1_1110[(t1 &gt;&gt;&gt; 24) &amp; MASK8];</find>
     </findStrings>
     <replaceStrings>
       <replace>(byte)0x</replace>
@@ -148,14 +191,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.form" />
-        <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java" />
-        <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.java" />
-        <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.java" />
-        <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.form" />
         <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.form" />
-        <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/ByteArrayDisplay.java" />
+        <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.form" />
+        <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.form" />
         <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java" />
+        <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/ByteArrayDisplay.java" />
+        <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.java" />
+        <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.java" />
+        <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java" />
+        <option value="$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java" />
       </list>
     </option>
   </component>
@@ -180,30 +224,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="camelliaZavrsni" type="b2602c69:ProjectViewProjectNode" />
-              <item name="camelliaZavrsni" type="462c0819:PsiDirectoryNode" />
+              <item name="camellia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="camellia" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="camelliaZavrsni" type="b2602c69:ProjectViewProjectNode" />
-              <item name="camelliaZavrsni" type="462c0819:PsiDirectoryNode" />
+              <item name="camellia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="camellia" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="camelliaZavrsni" type="b2602c69:ProjectViewProjectNode" />
-              <item name="camelliaZavrsni" type="462c0819:PsiDirectoryNode" />
+              <item name="camellia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="camellia" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="mladen" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="camelliaZavrsni" type="b2602c69:ProjectViewProjectNode" />
-              <item name="camelliaZavrsni" type="462c0819:PsiDirectoryNode" />
+              <item name="camellia" type="b2602c69:ProjectViewProjectNode" />
+              <item name="camellia" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="mladen" type="462c0819:PsiDirectoryNode" />
               <item name="CamelliaVisualisation" type="e9f4de52:FormNode" />
@@ -212,7 +254,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -376,7 +420,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -384,21 +429,21 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913387" sideWeight="0.5058565" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913387" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24270834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23645681" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -413,42 +458,187 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java</url>
-          <line>72</line>
+          <url>file://$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java</url>
+          <line>31</line>
           <properties />
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="20" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/ByteArrayDisplay.java">
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="73" column="54" lean-forward="false" selection-start-line="73" selection-start-column="54" selection-end-line="73" selection-end-column="54" />
+        <state relative-caret-position="425">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/javax/swing/SwingConstants.java">
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="32" lean-forward="false" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+        <state relative-caret-position="527">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="85" column="9" lean-forward="false" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1507391678657" expanded="true" signature="1602:1695" ph="{...}" />
+            <marker date="1507391678657" expanded="true" signature="4727:4768" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="52" column="32" lean-forward="false" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding>
+            <marker date="1507391678666" expanded="true" signature="1990:2033" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5117">
+          <caret line="301" column="26" lean-forward="false" selection-start-line="301" selection-start-column="26" selection-end-line="301" selection-end-column="26" />
+          <folding>
+            <element signature="e#18252#18253#0" expanded="true" />
+            <element signature="e#18301#18302#0" expanded="true" />
+            <element signature="e#18356#18357#0" expanded="true" />
+            <element signature="e#18403#18404#0" expanded="true" />
+            <element signature="e#38935#38936#0" expanded="true" />
+            <element signature="e#38961#38962#0" expanded="true" />
+            <element signature="e#38998#38999#0" expanded="true" />
+            <element signature="e#39022#39023#0" expanded="true" />
+            <element signature="e#39052#39053#0" expanded="true" />
+            <element signature="e#39076#39077#0" expanded="true" />
+            <element signature="e#39563#39564#0" expanded="true" />
+            <element signature="e#39588#39589#0" expanded="true" />
+            <element signature="e#39640#39641#0" expanded="true" />
+            <element signature="e#39677#39678#0" expanded="true" />
+            <element signature="e#39710#39711#0" expanded="true" />
+            <element signature="e#39733#39734#0" expanded="true" />
+            <element signature="e#39781#39782#0" expanded="true" />
+            <element signature="e#39814#39815#0" expanded="true" />
+            <element signature="e#39843#39844#0" expanded="true" />
+            <element signature="e#39863#39864#0" expanded="true" />
+            <element signature="e#39903#39904#0" expanded="true" />
+            <element signature="e#39930#39931#0" expanded="true" />
+            <element signature="e#39955#39956#0" expanded="true" />
+            <element signature="e#39971#39972#0" expanded="true" />
+            <element signature="e#40003#40004#0" expanded="true" />
+            <element signature="e#40022#40023#0" expanded="true" />
+            <element signature="e#40047#40048#0" expanded="true" />
+            <element signature="e#40063#40064#0" expanded="true" />
+            <element signature="e#40095#40096#0" expanded="true" />
+            <element signature="e#40114#40115#0" expanded="true" />
+            <element signature="e#40142#40143#0" expanded="true" />
+            <element signature="e#40161#40162#0" expanded="true" />
+            <element signature="e#40199#40200#0" expanded="true" />
+            <element signature="e#40224#40225#0" expanded="true" />
+            <element signature="e#40257#40258#0" expanded="true" />
+            <element signature="e#40276#40277#0" expanded="true" />
+            <element signature="e#40311#40312#0" expanded="true" />
+            <element signature="e#40330#40331#0" expanded="true" />
+            <element signature="e#40369#40370#0" expanded="true" />
+            <element signature="e#40393#40394#0" expanded="true" />
+            <element signature="e#40432#40433#0" expanded="true" />
+            <element signature="e#40456#40457#0" expanded="true" />
+            <element signature="e#40495#40496#0" expanded="true" />
+            <element signature="e#40519#40520#0" expanded="true" />
+            <element signature="e#40558#40559#0" expanded="true" />
+            <element signature="e#40582#40583#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/ByteArrayDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="109" column="16" lean-forward="false" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="46" lean-forward="false" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+        <state relative-caret-position="935">
+          <caret line="55" column="46" lean-forward="false" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="46" />
           <folding>
-            <marker date="1507388077911" expanded="true" signature="29162:31862" ph="{...}" />
+            <element signature="e#18252#18253#0" expanded="true" />
+            <element signature="e#18301#18302#0" expanded="true" />
+            <element signature="e#18356#18357#0" expanded="true" />
+            <element signature="e#18403#18404#0" expanded="true" />
+            <element signature="e#38935#38936#0" expanded="true" />
+            <element signature="e#38961#38962#0" expanded="true" />
+            <element signature="e#38998#38999#0" expanded="true" />
+            <element signature="e#39022#39023#0" expanded="true" />
+            <element signature="e#39052#39053#0" expanded="true" />
+            <element signature="e#39076#39077#0" expanded="true" />
+            <element signature="e#39563#39564#0" expanded="true" />
+            <element signature="e#39588#39589#0" expanded="true" />
+            <element signature="e#39640#39641#0" expanded="true" />
+            <element signature="e#39677#39678#0" expanded="true" />
+            <element signature="e#39710#39711#0" expanded="true" />
+            <element signature="e#39733#39734#0" expanded="true" />
+            <element signature="e#39781#39782#0" expanded="true" />
+            <element signature="e#39814#39815#0" expanded="true" />
+            <element signature="e#39843#39844#0" expanded="true" />
+            <element signature="e#39863#39864#0" expanded="true" />
+            <element signature="e#39903#39904#0" expanded="true" />
+            <element signature="e#39930#39931#0" expanded="true" />
+            <element signature="e#39955#39956#0" expanded="true" />
+            <element signature="e#39971#39972#0" expanded="true" />
+            <element signature="e#40003#40004#0" expanded="true" />
+            <element signature="e#40022#40023#0" expanded="true" />
+            <element signature="e#40047#40048#0" expanded="true" />
+            <element signature="e#40063#40064#0" expanded="true" />
+            <element signature="e#40095#40096#0" expanded="true" />
+            <element signature="e#40114#40115#0" expanded="true" />
+            <element signature="e#40142#40143#0" expanded="true" />
+            <element signature="e#40161#40162#0" expanded="true" />
+            <element signature="e#40199#40200#0" expanded="true" />
+            <element signature="e#40224#40225#0" expanded="true" />
+            <element signature="e#40257#40258#0" expanded="true" />
+            <element signature="e#40276#40277#0" expanded="true" />
+            <element signature="e#40311#40312#0" expanded="true" />
+            <element signature="e#40330#40331#0" expanded="true" />
+            <element signature="e#40369#40370#0" expanded="true" />
+            <element signature="e#40393#40394#0" expanded="true" />
+            <element signature="e#40432#40433#0" expanded="true" />
+            <element signature="e#40456#40457#0" expanded="true" />
+            <element signature="e#40495#40496#0" expanded="true" />
+            <element signature="e#40519#40520#0" expanded="true" />
+            <element signature="e#40558#40559#0" expanded="true" />
+            <element signature="e#40582#40583#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -460,9 +650,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="425">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="85" column="9" lean-forward="false" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1507391678657" expanded="true" signature="1602:1695" ph="{...}" />
+            <marker date="1507391678657" expanded="true" signature="4727:4768" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="52" column="32" lean-forward="false" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding>
+            <marker date="1507391678666" expanded="true" signature="1990:2033" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -474,36 +696,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="56" column="108" lean-forward="false" selection-start-line="56" selection-start-column="108" selection-end-line="56" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/ByteArrayDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="1734">
+          <caret line="109" column="16" lean-forward="false" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -513,7 +709,52 @@
         <state relative-caret-position="935">
           <caret line="55" column="46" lean-forward="false" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="46" />
           <folding>
-            <marker date="1507388077911" expanded="true" signature="29162:31862" ph="{...}" />
+            <element signature="e#18252#18253#0" expanded="true" />
+            <element signature="e#18301#18302#0" expanded="true" />
+            <element signature="e#18356#18357#0" expanded="true" />
+            <element signature="e#18403#18404#0" expanded="true" />
+            <element signature="e#38935#38936#0" expanded="true" />
+            <element signature="e#38961#38962#0" expanded="true" />
+            <element signature="e#38998#38999#0" expanded="true" />
+            <element signature="e#39022#39023#0" expanded="true" />
+            <element signature="e#39052#39053#0" expanded="true" />
+            <element signature="e#39076#39077#0" expanded="true" />
+            <element signature="e#39563#39564#0" expanded="true" />
+            <element signature="e#39588#39589#0" expanded="true" />
+            <element signature="e#39640#39641#0" expanded="true" />
+            <element signature="e#39677#39678#0" expanded="true" />
+            <element signature="e#39710#39711#0" expanded="true" />
+            <element signature="e#39733#39734#0" expanded="true" />
+            <element signature="e#39781#39782#0" expanded="true" />
+            <element signature="e#39814#39815#0" expanded="true" />
+            <element signature="e#39843#39844#0" expanded="true" />
+            <element signature="e#39863#39864#0" expanded="true" />
+            <element signature="e#39903#39904#0" expanded="true" />
+            <element signature="e#39930#39931#0" expanded="true" />
+            <element signature="e#39955#39956#0" expanded="true" />
+            <element signature="e#39971#39972#0" expanded="true" />
+            <element signature="e#40003#40004#0" expanded="true" />
+            <element signature="e#40022#40023#0" expanded="true" />
+            <element signature="e#40047#40048#0" expanded="true" />
+            <element signature="e#40063#40064#0" expanded="true" />
+            <element signature="e#40095#40096#0" expanded="true" />
+            <element signature="e#40114#40115#0" expanded="true" />
+            <element signature="e#40142#40143#0" expanded="true" />
+            <element signature="e#40161#40162#0" expanded="true" />
+            <element signature="e#40199#40200#0" expanded="true" />
+            <element signature="e#40224#40225#0" expanded="true" />
+            <element signature="e#40257#40258#0" expanded="true" />
+            <element signature="e#40276#40277#0" expanded="true" />
+            <element signature="e#40311#40312#0" expanded="true" />
+            <element signature="e#40330#40331#0" expanded="true" />
+            <element signature="e#40369#40370#0" expanded="true" />
+            <element signature="e#40393#40394#0" expanded="true" />
+            <element signature="e#40432#40433#0" expanded="true" />
+            <element signature="e#40456#40457#0" expanded="true" />
+            <element signature="e#40495#40496#0" expanded="true" />
+            <element signature="e#40519#40520#0" expanded="true" />
+            <element signature="e#40558#40559#0" expanded="true" />
+            <element signature="e#40582#40583#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -538,9 +779,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1360">
+          <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1507391678657" expanded="true" signature="1602:1695" ph="{...}" />
+            <marker date="1507391678657" expanded="true" signature="4727:4768" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -553,7 +798,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="52" column="32" lean-forward="true" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
-          <folding />
+          <folding>
+            <marker date="1507391678666" expanded="true" signature="1990:2033" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -590,7 +837,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="986">
           <caret line="63" column="35" lean-forward="true" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1507391678657" expanded="true" signature="1602:1695" ph="{...}" />
+            <marker date="1507391678657" expanded="true" signature="4727:4768" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -599,7 +850,52 @@
         <state relative-caret-position="5066">
           <caret line="298" column="31" lean-forward="false" selection-start-line="298" selection-start-column="31" selection-end-line="298" selection-end-column="31" />
           <folding>
-            <marker date="1507388077911" expanded="true" signature="29162:31862" ph="{...}" />
+            <element signature="e#18252#18253#0" expanded="true" />
+            <element signature="e#18301#18302#0" expanded="true" />
+            <element signature="e#18356#18357#0" expanded="true" />
+            <element signature="e#18403#18404#0" expanded="true" />
+            <element signature="e#38935#38936#0" expanded="true" />
+            <element signature="e#38961#38962#0" expanded="true" />
+            <element signature="e#38998#38999#0" expanded="true" />
+            <element signature="e#39022#39023#0" expanded="true" />
+            <element signature="e#39052#39053#0" expanded="true" />
+            <element signature="e#39076#39077#0" expanded="true" />
+            <element signature="e#39563#39564#0" expanded="true" />
+            <element signature="e#39588#39589#0" expanded="true" />
+            <element signature="e#39640#39641#0" expanded="true" />
+            <element signature="e#39677#39678#0" expanded="true" />
+            <element signature="e#39710#39711#0" expanded="true" />
+            <element signature="e#39733#39734#0" expanded="true" />
+            <element signature="e#39781#39782#0" expanded="true" />
+            <element signature="e#39814#39815#0" expanded="true" />
+            <element signature="e#39843#39844#0" expanded="true" />
+            <element signature="e#39863#39864#0" expanded="true" />
+            <element signature="e#39903#39904#0" expanded="true" />
+            <element signature="e#39930#39931#0" expanded="true" />
+            <element signature="e#39955#39956#0" expanded="true" />
+            <element signature="e#39971#39972#0" expanded="true" />
+            <element signature="e#40003#40004#0" expanded="true" />
+            <element signature="e#40022#40023#0" expanded="true" />
+            <element signature="e#40047#40048#0" expanded="true" />
+            <element signature="e#40063#40064#0" expanded="true" />
+            <element signature="e#40095#40096#0" expanded="true" />
+            <element signature="e#40114#40115#0" expanded="true" />
+            <element signature="e#40142#40143#0" expanded="true" />
+            <element signature="e#40161#40162#0" expanded="true" />
+            <element signature="e#40199#40200#0" expanded="true" />
+            <element signature="e#40224#40225#0" expanded="true" />
+            <element signature="e#40257#40258#0" expanded="true" />
+            <element signature="e#40276#40277#0" expanded="true" />
+            <element signature="e#40311#40312#0" expanded="true" />
+            <element signature="e#40330#40331#0" expanded="true" />
+            <element signature="e#40369#40370#0" expanded="true" />
+            <element signature="e#40393#40394#0" expanded="true" />
+            <element signature="e#40432#40433#0" expanded="true" />
+            <element signature="e#40456#40457#0" expanded="true" />
+            <element signature="e#40495#40496#0" expanded="true" />
+            <element signature="e#40519#40520#0" expanded="true" />
+            <element signature="e#40558#40559#0" expanded="true" />
+            <element signature="e#40582#40583#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -612,7 +908,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_40/src.zip!/java/awt/Color.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_40/src.zip!/java/awt/Color.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -631,7 +933,52 @@
         <state relative-caret-position="782">
           <caret line="46" column="29" lean-forward="true" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
           <folding>
-            <marker date="1507388077911" expanded="true" signature="29162:31862" ph="{...}" />
+            <element signature="e#18252#18253#0" expanded="true" />
+            <element signature="e#18301#18302#0" expanded="true" />
+            <element signature="e#18356#18357#0" expanded="true" />
+            <element signature="e#18403#18404#0" expanded="true" />
+            <element signature="e#38935#38936#0" expanded="true" />
+            <element signature="e#38961#38962#0" expanded="true" />
+            <element signature="e#38998#38999#0" expanded="true" />
+            <element signature="e#39022#39023#0" expanded="true" />
+            <element signature="e#39052#39053#0" expanded="true" />
+            <element signature="e#39076#39077#0" expanded="true" />
+            <element signature="e#39563#39564#0" expanded="true" />
+            <element signature="e#39588#39589#0" expanded="true" />
+            <element signature="e#39640#39641#0" expanded="true" />
+            <element signature="e#39677#39678#0" expanded="true" />
+            <element signature="e#39710#39711#0" expanded="true" />
+            <element signature="e#39733#39734#0" expanded="true" />
+            <element signature="e#39781#39782#0" expanded="true" />
+            <element signature="e#39814#39815#0" expanded="true" />
+            <element signature="e#39843#39844#0" expanded="true" />
+            <element signature="e#39863#39864#0" expanded="true" />
+            <element signature="e#39903#39904#0" expanded="true" />
+            <element signature="e#39930#39931#0" expanded="true" />
+            <element signature="e#39955#39956#0" expanded="true" />
+            <element signature="e#39971#39972#0" expanded="true" />
+            <element signature="e#40003#40004#0" expanded="true" />
+            <element signature="e#40022#40023#0" expanded="true" />
+            <element signature="e#40047#40048#0" expanded="true" />
+            <element signature="e#40063#40064#0" expanded="true" />
+            <element signature="e#40095#40096#0" expanded="true" />
+            <element signature="e#40114#40115#0" expanded="true" />
+            <element signature="e#40142#40143#0" expanded="true" />
+            <element signature="e#40161#40162#0" expanded="true" />
+            <element signature="e#40199#40200#0" expanded="true" />
+            <element signature="e#40224#40225#0" expanded="true" />
+            <element signature="e#40257#40258#0" expanded="true" />
+            <element signature="e#40276#40277#0" expanded="true" />
+            <element signature="e#40311#40312#0" expanded="true" />
+            <element signature="e#40330#40331#0" expanded="true" />
+            <element signature="e#40369#40370#0" expanded="true" />
+            <element signature="e#40393#40394#0" expanded="true" />
+            <element signature="e#40432#40433#0" expanded="true" />
+            <element signature="e#40456#40457#0" expanded="true" />
+            <element signature="e#40495#40496#0" expanded="true" />
+            <element signature="e#40519#40520#0" expanded="true" />
+            <element signature="e#40558#40559#0" expanded="true" />
+            <element signature="e#40582#40583#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -649,7 +996,52 @@
         <state relative-caret-position="6035">
           <caret line="355" column="22" lean-forward="false" selection-start-line="355" selection-start-column="12" selection-end-line="355" selection-end-column="22" />
           <folding>
-            <marker date="1507388077911" expanded="true" signature="29162:31862" ph="{...}" />
+            <element signature="e#18252#18253#0" expanded="true" />
+            <element signature="e#18301#18302#0" expanded="true" />
+            <element signature="e#18356#18357#0" expanded="true" />
+            <element signature="e#18403#18404#0" expanded="true" />
+            <element signature="e#38935#38936#0" expanded="true" />
+            <element signature="e#38961#38962#0" expanded="true" />
+            <element signature="e#38998#38999#0" expanded="true" />
+            <element signature="e#39022#39023#0" expanded="true" />
+            <element signature="e#39052#39053#0" expanded="true" />
+            <element signature="e#39076#39077#0" expanded="true" />
+            <element signature="e#39563#39564#0" expanded="true" />
+            <element signature="e#39588#39589#0" expanded="true" />
+            <element signature="e#39640#39641#0" expanded="true" />
+            <element signature="e#39677#39678#0" expanded="true" />
+            <element signature="e#39710#39711#0" expanded="true" />
+            <element signature="e#39733#39734#0" expanded="true" />
+            <element signature="e#39781#39782#0" expanded="true" />
+            <element signature="e#39814#39815#0" expanded="true" />
+            <element signature="e#39843#39844#0" expanded="true" />
+            <element signature="e#39863#39864#0" expanded="true" />
+            <element signature="e#39903#39904#0" expanded="true" />
+            <element signature="e#39930#39931#0" expanded="true" />
+            <element signature="e#39955#39956#0" expanded="true" />
+            <element signature="e#39971#39972#0" expanded="true" />
+            <element signature="e#40003#40004#0" expanded="true" />
+            <element signature="e#40022#40023#0" expanded="true" />
+            <element signature="e#40047#40048#0" expanded="true" />
+            <element signature="e#40063#40064#0" expanded="true" />
+            <element signature="e#40095#40096#0" expanded="true" />
+            <element signature="e#40114#40115#0" expanded="true" />
+            <element signature="e#40142#40143#0" expanded="true" />
+            <element signature="e#40161#40162#0" expanded="true" />
+            <element signature="e#40199#40200#0" expanded="true" />
+            <element signature="e#40224#40225#0" expanded="true" />
+            <element signature="e#40257#40258#0" expanded="true" />
+            <element signature="e#40276#40277#0" expanded="true" />
+            <element signature="e#40311#40312#0" expanded="true" />
+            <element signature="e#40330#40331#0" expanded="true" />
+            <element signature="e#40369#40370#0" expanded="true" />
+            <element signature="e#40393#40394#0" expanded="true" />
+            <element signature="e#40432#40433#0" expanded="true" />
+            <element signature="e#40456#40457#0" expanded="true" />
+            <element signature="e#40495#40496#0" expanded="true" />
+            <element signature="e#40519#40520#0" expanded="true" />
+            <element signature="e#40558#40559#0" expanded="true" />
+            <element signature="e#40582#40583#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -671,46 +1063,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1507391678657" expanded="true" signature="1602:1695" ph="{...}" />
+            <marker date="1507391678657" expanded="true" signature="4727:4768" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_40/src.zip!/java/awt/Color.java" />
-    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_40/src.zip!/java/awt/Color.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="17">
+          <caret line="59" column="13" lean-forward="false" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="56" column="108" lean-forward="false" selection-start-line="56" selection-start-column="108" selection-end-line="56" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/javax/swing/SwingConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="41" column="32" lean-forward="false" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.form">
@@ -718,34 +1083,114 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/byteArrayDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java">
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/FFunctionDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="346" column="50" lean-forward="false" selection-start-line="346" selection-start-column="50" selection-end-line="346" selection-end-column="50" />
+        <state relative-caret-position="629">
+          <caret line="53" column="32" lean-forward="false" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
           <folding>
-            <marker date="1507388077911" expanded="true" signature="29162:31862" ph="{...}" />
+            <marker date="1507391678666" expanded="true" signature="1990:2033" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/ByteArrayDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="72" column="28" lean-forward="true" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+        <state relative-caret-position="17">
+          <caret line="117" column="17" lean-forward="false" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaVisualisation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="65" column="62" lean-forward="false" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
-          <folding />
+        <state relative-caret-position="-184">
+          <caret line="76" column="22" lean-forward="true" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1507391678657" expanded="true" signature="1602:1695" ph="{...}" />
+            <marker date="1507391678657" expanded="true" signature="4727:4768" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/camellia/brankovic/mladen/CamelliaAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-584">
+          <caret line="416" column="47" lean-forward="true" selection-start-line="416" selection-start-column="47" selection-end-line="416" selection-end-column="47" />
+          <folding>
+            <element signature="e#18252#18253#0" expanded="true" />
+            <element signature="e#18301#18302#0" expanded="true" />
+            <element signature="e#18356#18357#0" expanded="true" />
+            <element signature="e#18403#18404#0" expanded="true" />
+            <element signature="e#38935#38936#0" expanded="true" />
+            <element signature="e#38961#38962#0" expanded="true" />
+            <element signature="e#38998#38999#0" expanded="true" />
+            <element signature="e#39022#39023#0" expanded="true" />
+            <element signature="e#39052#39053#0" expanded="true" />
+            <element signature="e#39076#39077#0" expanded="true" />
+            <element signature="e#39563#39564#0" expanded="true" />
+            <element signature="e#39588#39589#0" expanded="true" />
+            <element signature="e#39640#39641#0" expanded="true" />
+            <element signature="e#39677#39678#0" expanded="true" />
+            <element signature="e#39710#39711#0" expanded="true" />
+            <element signature="e#39733#39734#0" expanded="true" />
+            <element signature="e#39781#39782#0" expanded="true" />
+            <element signature="e#39814#39815#0" expanded="true" />
+            <element signature="e#39843#39844#0" expanded="true" />
+            <element signature="e#39863#39864#0" expanded="true" />
+            <element signature="e#39903#39904#0" expanded="true" />
+            <element signature="e#39930#39931#0" expanded="true" />
+            <element signature="e#39955#39956#0" expanded="true" />
+            <element signature="e#39971#39972#0" expanded="true" />
+            <element signature="e#40003#40004#0" expanded="true" />
+            <element signature="e#40022#40023#0" expanded="true" />
+            <element signature="e#40047#40048#0" expanded="true" />
+            <element signature="e#40063#40064#0" expanded="true" />
+            <element signature="e#40095#40096#0" expanded="true" />
+            <element signature="e#40114#40115#0" expanded="true" />
+            <element signature="e#40142#40143#0" expanded="true" />
+            <element signature="e#40161#40162#0" expanded="true" />
+            <element signature="e#40199#40200#0" expanded="true" />
+            <element signature="e#40224#40225#0" expanded="true" />
+            <element signature="e#40257#40258#0" expanded="true" />
+            <element signature="e#40276#40277#0" expanded="true" />
+            <element signature="e#40311#40312#0" expanded="true" />
+            <element signature="e#40330#40331#0" expanded="true" />
+            <element signature="e#40369#40370#0" expanded="true" />
+            <element signature="e#40393#40394#0" expanded="true" />
+            <element signature="e#40432#40433#0" expanded="true" />
+            <element signature="e#40456#40457#0" expanded="true" />
+            <element signature="e#40495#40496#0" expanded="true" />
+            <element signature="e#40519#40520#0" expanded="true" />
+            <element signature="e#40558#40559#0" expanded="true" />
+            <element signature="e#40582#40583#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
