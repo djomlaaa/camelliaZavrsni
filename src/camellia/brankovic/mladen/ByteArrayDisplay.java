@@ -29,44 +29,82 @@ public class ByteArrayDisplay extends JPanel {
 this.displayBytes = displayBytes;
 displayInts = null;
 displayBits = null;
-displaySize = displayBytes.length;
-ReCreateTextFields();
+        if (displaySize != displayBytes.length) {
+            displaySize = displayBytes.length;
+            ReCreateTextFields();
+        }
 UpdateTextFields();
     }
     public void SetIntArray(int[] displayInts) {
         displayBytes = null;
         this.displayInts = displayInts;
         displayBits = null;
-        displaySize = displayInts.length;
-        ReCreateTextFields();
+
+        if (displaySize != displayInts.length) {
+            displaySize = displayInts.length;
+            ReCreateTextFields();
+        }
+
         UpdateTextFields();
     }
     public void SetBitArray(boolean[] displayBits) {
         displayBytes = null;
         displayInts = null;
         this.displayBits = displayBits;
-        displaySize = displayBits.length;
-        ReCreateTextFields();
+
+        if (displaySize != displayBits.length) {
+            displaySize = displayBits.length;
+            ReCreateTextFields();
+        }
+
         UpdateTextFields();
     }
     private void ReCreateTextFields() {
 
-        GridLayout gridLayout = new GridLayout((int)Math.sqrt(displaySize),(int)Math.sqrt(displaySize));
-        gridLayout.setHgap(3);
-        gridLayout.setVgap(3);
 
-        setLayout(gridLayout);
-        removeAll();
-        Dimension dimension = new Dimension();
-        dimension.setSize(25,25);
-        LabelFields = new JLabel[displaySize];
-        Border border = BorderFactory.createLineBorder(Color.black,2);
+    int columnCount = 8;
+    int rowCount = 8;
+    switch (displaySize) {
+        case 8:
+            columnCount = 4;
+            rowCount = 2;
+            break;
+        case 16:
+            columnCount = 4;
+            rowCount = 4;
+            break;
+        case 64:
+            columnCount = 8;
+            rowCount = 8;
+            break;
+        case 128:
+            columnCount = 16;
+            rowCount = 8;
+            break;
+        case 256:
+            columnCount = 16;
+            rowCount = 16;
+            break;
+        default:
+            //throw new Exception("Niste izabrali za display size " + displaySize);
+    }
+    GridLayout gridLayout = new GridLayout(rowCount, columnCount);
+    gridLayout.setHgap(3);
+    gridLayout.setVgap(3);
+
+    setLayout(gridLayout);
+    removeAll();
+    Dimension dimension = new Dimension();
+    dimension.setSize(15, 15);
+    LabelFields = new JLabel[displaySize];
+    Border border = BorderFactory.createLineBorder(Color.gray, 1);
         for (int i = 0; i < displaySize; i++) {
 
             LabelFields[i] = new JLabel();
             LabelFields[i].setMinimumSize(dimension);
 //            LabelFields[i].setPreferredSize(dimension);
 //            LabelFields[i].setMaximumSize(dimension);
+            LabelFields[i].setFont(LabelFields[i].getFont().deriveFont(12f));
             LabelFields[i].setHorizontalAlignment(SwingConstants.CENTER);
             LabelFields[i].setVerticalAlignment(SwingConstants.CENTER);
             LabelFields[i].setBorder(border);
@@ -130,5 +168,22 @@ UpdateTextFields();
     public interface MoseHoverOnByteListener {
         void HoverOn(int index, ByteArrayDisplay source);
         void HoverOff(int index, ByteArrayDisplay source);
+    }
+
+    public static boolean[] ToBits(byte[] bytes) {
+
+        boolean[] bools = new boolean[bytes.length *8];
+        for (int i =0; i < bytes.length; i++) {
+            bools[i*4+0] = ((bytes[i] & 1) != 0);
+            bools[i*4+1] = ((bytes[i] & 2) != 0);
+            bools[i*4+2] = ((bytes[i] & 4) != 0);
+            bools[i*4+3] = ((bytes[i] & 8) != 0);
+            bools[i*4+4] = ((bytes[i] & 16) != 0);
+            bools[i*4+5] = ((bytes[i] & 32) != 0);
+            bools[i*4+6] = ((bytes[i] & 64) != 0);
+            bools[i*4+7] = ((bytes[i] & 128) != 0);
+
+        }
+        return bools;
     }
 }

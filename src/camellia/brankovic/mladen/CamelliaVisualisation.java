@@ -63,20 +63,20 @@ displayKL.AddMoseHoverOnByteListener(this);
         switch (currentOperation) {
             case 0:
                 if (roundIndex[currentOperation] == 0) {
-                displayKL.SetByteArray(IntArrayToByteArray(CamelliaAlgorithm.initialKey));
+                displayKL.SetBitArray(ByteArrayDisplay.ToBits(IntArrayToByteArray(CamelliaAlgorithm.initialKey)));
                 displayKA.setVisible(false);
                 showFFunction.setVisible(false);
                 }
                 else if(roundIndex[currentOperation] == 1) {
-                    displayKL.SetByteArray(IntArrayToByteArray(CamelliaAlgorithm.initialKey));
+                    displayKL.SetBitArray(ByteArrayDisplay.ToBits(IntArrayToByteArray(CamelliaAlgorithm.initialKey)));
                     displayKA.setVisible(true);
-                    displayKA.SetByteArray(IntArrayToByteArray(CamelliaAlgorithm.formingKA[0]));
+                    displayKA.SetBitArray(ByteArrayDisplay.ToBits(IntArrayToByteArray(CamelliaAlgorithm.formingKA[0])));
                     showFFunction.setVisible(false);
 
                 }
                 else {
-                    displayKL.SetByteArray(IntArrayToByteArray(CamelliaAlgorithm.formingKA[roundIndex[currentOperation]-2]));
-                    displayKA.SetByteArray(IntArrayToByteArray(CamelliaAlgorithm.formingKA[roundIndex[currentOperation]-1]));
+                    displayKL.SetBitArray(ByteArrayDisplay.ToBits(IntArrayToByteArray(CamelliaAlgorithm.formingKA[roundIndex[currentOperation]-2])));
+                    displayKA.SetBitArray(ByteArrayDisplay.ToBits(IntArrayToByteArray(CamelliaAlgorithm.formingKA[roundIndex[currentOperation]-1])));
                     displayKA.setVisible(true);
 
                     showFFunction.setVisible(roundIndex[currentOperation] == 4 || roundIndex[currentOperation] == 2 );
@@ -84,14 +84,17 @@ displayKL.AddMoseHoverOnByteListener(this);
                 }
                 break;
             case 1:
-                rotatingKey.SetByteArray(IntArrayToByteArray(CamelliaAlgorithm.outputK[roundIndex[currentOperation]]));
+                rotatingKey.SetBitArray(ByteArrayDisplay.ToBits(IntArrayToByteArray(CamelliaAlgorithm.outputK[roundIndex[currentOperation]])));
                 break;
         }
     }
     public static byte[] IntArrayToByteArray(int[] intArray) {
-        byte[] byteArray = new byte[intArray.length];
+        byte[] byteArray = new byte[intArray.length*4];
         for (int i = 0; i < intArray.length;i++) {
-            byteArray[i] = (byte)intArray[i];
+            byteArray[i*4+0] = (byte)(intArray[i] >> 24);
+            byteArray[i*4+1] = (byte)(intArray[i] >> 16);
+            byteArray[i*4+2] = (byte)(intArray[i] >> 8);
+            byteArray[i*4+3] = (byte)intArray[i];
         }
         return byteArray;
     }
