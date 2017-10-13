@@ -450,34 +450,34 @@ public class CamelliaAlgorithm {
 	public static int currentLState;
 
 
-	public static int[][] stateBefore = new int[18][4];
-	public static int[][] stateAfter = new int[18][4];
+	public static int[][] stateBefore = new int[20][4];
+	public static int[][] stateAfter = new int[20][4];
 
 	public static int[][] stateLBefore = new int[18][4];
 	public static int[][] stateLAfter = new int[18][4];
 
 	public static int[] prewhiteningState = new int[4];
 	public static int[] postwhiteningState = new int[4];
-	public static int[] stateT1Before = new int[18];
-	public static int[] stateT2Before = new int[18];
-	public static int[] stateT1After = new int[18];
-	public static int[] stateT2After = new int[18];
-	public static int[] stateU1Before = new int[18];
-	public static int[] stateU2Before = new int[18];
-	public static int[] stateU3Before = new int[18];
-	public static int[] stateU4Before = new int[18];
-	public static int[] stateV1Before = new int[18];
-	public static int[] stateV2Before = new int[18];
-	public static int[] stateV3Before = new int[18];
-	public static int[] stateV4Before = new int[18];
-	public static int[] stateU1After = new int[18];
-	public static int[] stateU2After = new int[18];
-	public static int[] stateU3After = new int[18];
-	public static int[] stateU4After = new int[18];
-	public static int[] stateV1After = new int[18];
-	public static int[] stateV2After = new int[18];
-	public static int[] stateV3After = new int[18];
-	public static int[] stateV4After = new int[18];
+	public static int[] stateT1Before = new int[20];
+	public static int[] stateT2Before = new int[20];
+	public static int[] stateT1After = new int[20];
+	public static int[] stateT2After = new int[20];
+	public static int[] stateU1Before = new int[20];
+	public static int[] stateU2Before = new int[20];
+	public static int[] stateU3Before = new int[20];
+	public static int[] stateU4Before = new int[20];
+	public static int[] stateV1Before = new int[20];
+	public static int[] stateV2Before = new int[20];
+	public static int[] stateV3Before = new int[20];
+	public static int[] stateV4Before = new int[20];
+	public static int[] stateU1After = new int[20];
+	public static int[] stateU2After = new int[20];
+	public static int[] stateU3After = new int[20];
+	public static int[] stateU4After = new int[20];
+	public static int[] stateV1After = new int[20];
+	public static int[] stateV2After = new int[20];
+	public static int[] stateV3After = new int[20];
+	public static int[] stateV4After = new int[20];
 	public static int[] stateL1Conjuction = new int[2];
 	public static int[] stateL2Disjunction = new int[2];
 	public static int[] stateL3Disjunction = new int [2];
@@ -795,7 +795,7 @@ public class CamelliaAlgorithm {
 		currentOutputState = 5;
 		camelliaF2(state, subkey, 8);
 
-		currentLState = 1;
+		currentLState = 0;
 		camelliaFLs(state, kl, 0);
 
 		currentInputState = 7;
@@ -810,7 +810,7 @@ public class CamelliaAlgorithm {
 		currentOutputState = 11;
 		camelliaF2(state, subkey, 20);
 
-		currentLState = 2;
+		currentLState = 1;
 		camelliaFLs(state, kl, 4);
 
 		currentInputState = 13;
